@@ -1,9 +1,4 @@
-# pants_and_sneakers
-
-MARK
-JASON
-PAUL
-TIM Test
+# Venue-Menu
 
 # README
 
@@ -28,4 +23,8 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* Badges
+
+![Build Status](https://codeship.com/projects/126f1110-bb55-0135-37fd-46dcf572bfca/status?branch=master)
+[![Code Climate](https://codeclimate.com/github/Filbert0o/venue-menu/badges/gpa.svg)](https://codeclimate.com/github/Filbert0o/venue-menu)
+[![Coverage Status](https://coveralls.io/repos/github/Filbert0o/venue-menu/badge.svg?branch=master)](https://coveralls.io/github/Filbert0o/venue-menu?branch=master)
