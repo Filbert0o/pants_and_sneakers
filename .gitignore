@@ -1,0 +1,5 @@
+/node_modules
+/app/assets/javascripts/bundle.js
+/react/coverage
+Gemfile.lock
+package-lock.json
