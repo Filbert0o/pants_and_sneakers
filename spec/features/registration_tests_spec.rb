@@ -1,5 +1,3 @@
-# new_user_registration GET    /users/sign_up(.:format) devise/registrations#new
-
 require 'rails_helper'
 
 feature "visitor registers as new user" do
@@ -37,4 +35,19 @@ feature "visitor registers as new user" do
     expect(page).to have_content "Last name can't be blank"
   end
 
+  scenario "user edits their account" do
+
+    user = User.create(first_name: "John",
+      last_name: "Smith",
+      email: "john@firstenglishcolony.edu",
+      password: "pocahontas")
+      login_as(user, :scope => :user)
+
+    visit edit_user_registration_path
+
+    expect(page).to have_content "Edit"
+    expect(find_field("First Name").value).to eq "John"
+    expect(find_field("Last Name").value).to eq "Smith"
+    expect(find_field("Email").value).to eq "john@firstenglishcolony.edu"
+  end
 end
