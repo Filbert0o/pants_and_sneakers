@@ -37,7 +37,8 @@ feature 'visitor registers as new user' do
       first_name: 'John',
       last_name: 'Smith',
       email: 'john@firstenglishcolony.edu',
-      password: 'pocahontas')
+      password: 'pocahontas'
+    )
 
     login_as(user, scope: :user)
 

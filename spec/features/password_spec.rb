@@ -6,15 +6,17 @@ feature 'reset password' do
       first_name: 'John',
       last_name: 'Smith',
       email: 'john@firstenglishcolony.edu',
-      password: 'pocahontas')
-    end
-    
+      password: 'pocahontas'
+    )
+  end
+
   scenario 'user clicks forgot password' do
     visit new_user_session_path
     click_link 'Forgot your password?'
 
     expect(current_path).to eq '/users/password/new'
   end
+
   scenario 'user resets password' do
     visit new_user_session_path
     click_link 'Forgot your password?'

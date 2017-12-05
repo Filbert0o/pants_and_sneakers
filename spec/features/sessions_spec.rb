@@ -6,7 +6,8 @@ feature 'user logs in to account' do
       first_name: 'John',
       last_name: 'Smith',
       email: 'john@firstenglishcolony.edu',
-      password: 'pocahontas')
+      password: 'pocahontas'
+    )
   end
 
   scenario 'user successfully logs in to account' do
