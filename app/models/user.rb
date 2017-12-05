@@ -1,4 +1,4 @@
-# user model generated from devise 
+# user model generated from devise
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable

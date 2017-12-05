@@ -1,18 +1,16 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  it { should have_valid(:first_name).when('Joe', 'Jason', 'Paul') }
+  it { should have_valid(:first_name).when('Joe', 'Jason') }
   it { should_not have_valid(:first_name).when(nil, '') }
 
-  it { should have_valid(:last_name).when('Z', 'Pres', 'PaMcHul') }
+  it { should have_valid(:last_name).when('Z', 'Pres') }
   it { should_not have_valid(:last_name).when(nil, '') }
 
-  it { should have_valid(:email).when('Joe@yahoo.com', 'Jason@gmail.com',
-    'Paul@hotmail.com') }
+  it { should have_valid(:email).when('Joe@yahoo.com', 'Jason@gmail.com') }
   it { should_not have_valid(:email).when(nil, '') }
 
-  it { should have_valid(:password).when('pantsandsneakers', 'ilovecooking',
-    'iloveyoungThug') }
+  it { should have_valid(:password).when('pantsandsneakers', 'ilovecooking') }
   it { should_not have_valid(:password).when(nil, '') }
 
   it 'should display an error if any of the required fields are left blank' do
