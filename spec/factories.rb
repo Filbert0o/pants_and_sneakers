@@ -18,7 +18,12 @@ FactoryBot.define do
     #     review_count 3
     #   end
     #   after(:create) do |venue, evaluator|
-    #     create_list(:review, evaluator.review_count, venue: venue, user: User.first)
+    #     create_list(
+    #         :review,
+    #         evaluator.review_count,
+    #         venue: venue,
+    #         user: User.first
+    #       )
     #   end
     # end
   end
