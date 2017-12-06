@@ -3,4 +3,10 @@ Rails.application.routes.draw do
 
   root "venues#index"
   resources :venues, only: [:index, :show]
+
+  namespace :api do
+    namespace :v1 do
+      resources :venues, only: [:index, :show]
+    end
+  end
 end
