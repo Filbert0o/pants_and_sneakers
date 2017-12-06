@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 import VenuesIndexTile from "../components/VenuesIndexTile"
 
-
 class VenuesIndexContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
       venues: []
     }
-
   }
 
   getVenues () {

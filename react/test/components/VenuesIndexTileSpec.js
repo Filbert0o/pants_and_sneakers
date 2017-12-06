@@ -1,7 +1,4 @@
 import VenuesIndexTile from '../../src/components/VenuesIndexTile';
-import { mount } from "enzyme"
-import React from "react"
-import jasmineEnzyme from "jasmine-enzyme"
 
 describe('VenuesIndexTile', () => {
   let wrapper;
