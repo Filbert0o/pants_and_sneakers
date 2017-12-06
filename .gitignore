@@ -7,3 +7,4 @@ package-lock.json
 .env
 log/development.log
 /log
+/tmp
