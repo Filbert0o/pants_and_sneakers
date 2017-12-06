@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
-import BackButton from "./components/BackButton"
+import BackButton from "./components/BackButton";
+import SearchBar from './components/SearchBar';
 
 const NavBar = props =>{
   return(
@@ -10,6 +11,7 @@ const NavBar = props =>{
       <Link to='#'>Sign In</Link>&nbsp;
       <Link to='#'>Sign Up</Link>&nbsp;
       <br/>
+      <SearchBar />
       <BackButton />
       {props.children}
     </div>
