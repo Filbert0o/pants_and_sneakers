@@ -8,3 +8,4 @@ package-lock.json
 log/development.log
 /log
 /tmp
+/log/test.log
