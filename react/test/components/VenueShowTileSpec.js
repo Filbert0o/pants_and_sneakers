@@ -1,14 +1,14 @@
-import VenuesIndexTile from '../../src/components/VenuesIndexTile';
+import VenueShowTile from '../../src/components/VenueShowTile';
 import { mount } from "enzyme"
 import React from "react"
 import jasmineEnzyme from "jasmine-enzyme"
 
-describe('VenuesIndexTile', () => {
+describe('VenueShowTile', () => {
   let wrapper;
 
   beforeEach(() => {
     wrapper = mount(
-      <VenuesIndexTile
+      <VenueShowTile
         id={1}
         name="Tattooed Moms"
         address="504 south st."
@@ -30,12 +30,11 @@ describe('VenuesIndexTile', () => {
   })
 
   it('should render div, img tags', () => {
-    expect(wrapper.find('div')).toBePresent();
-    expect(wrapper.find('img')).toBePresent();
+    expect(wrapper.find('div','img')).toBePresent();
   });
 
   it('should render a div tag with props', () => {
-    expect(wrapper.find('div').text()).toBe('Tattooed Moms504 south st.PhiladelphiaPA19109')
+    expect(wrapper.find('div').text()).toBe('Tattooed Moms504 south st.PhiladelphiaPA19109google.com21+bar foodmonday - sunday215-555-5555suit5 bucks')
   });
 
   it('should render an img tag with the specific props', () => {

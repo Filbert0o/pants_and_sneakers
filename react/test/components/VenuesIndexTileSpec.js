@@ -22,8 +22,8 @@ describe('VenuesIndexTile', () => {
   })
 
   it('should render div, img tags', () => {
-    expect(wrapper.find('div')).toBePresent();
-    expect(wrapper.find('img')).toBePresent();
+    expect(wrapper.find('div','img')).toBePresent();
+
   });
 
   it('should render a div tag with props', () => {
