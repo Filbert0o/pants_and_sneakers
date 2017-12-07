@@ -37,7 +37,6 @@ class VenueShowContainer extends Component {
 
 
   render() {
-    debugger
     return(
       <div>
         <VenueShowTile
