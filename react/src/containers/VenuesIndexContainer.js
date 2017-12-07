@@ -49,7 +49,7 @@ class VenuesIndexContainer extends Component {
       )
     })
     return(
-      <div>
+      <div className='row'>
         {venues}
       </div>
     )

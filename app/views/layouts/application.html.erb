@@ -9,9 +9,9 @@
   </head>
 
   <body>
-    <p class="notice"> <%= notice %> </p>
-    <p class="alert"> <%= alert %> </p>
-    <%= button_to "Sign out", destroy_user_session_path, method: :delete %>
+    <p class="flash notice"> <%= notice %> </p>
+    <p class="flash alert"> <%= alert %> </p>
+
     <%= yield %>
   </body>
 </html>
