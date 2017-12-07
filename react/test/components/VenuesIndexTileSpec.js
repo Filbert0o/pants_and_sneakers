@@ -18,18 +18,15 @@ describe('VenuesIndexTile', () => {
     )
   })
 
-  it('should render div, img tags', () => {
-    expect(wrapper.find('div','img')).toBePresent();
-
+  it('should render div tags', () => {
+    expect(wrapper.find('div')).toBePresent();
   });
 
-  it('should render a div tag with props', () => {
-    expect(wrapper.find('div').text()).toBe('Tattooed Moms504 south st.PhiladelphiaPA19109')
+  it('should render the venue name in an h2', () => {
+    expect(wrapper.find('h2').text()).toBe('Tattooed Moms')
   });
 
-  it('should render an img tag with the specific props', () => {
-    expect(wrapper.find('img').props()).toEqual({
-      src: 'http://blackonthecanvas.com/wp-content/uploads/2014/04/IMG_6260-1024x683.jpg'
-    });
+  it('should render the venue addressin a ul', () => {
+    expect(wrapper.find('ul').text()).toContain('504 south st.Philadelphia, PA 19109')
   });
 })
