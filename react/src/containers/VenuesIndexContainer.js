@@ -49,15 +49,8 @@ class VenuesIndexContainer extends Component {
       )
     })
     return(
-      <div>
-        <div className='row' id='billboard'>
-          Hero
-        </div>
-        <div className='container'>
-          <div className='row'>
-            {venues}
-          </div>
-        </div>
+      <div className='row'>
+        {venues}
       </div>
     )
   }
