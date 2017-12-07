@@ -1,1 +1,10 @@
 @import "skeleton/loader";
+
+$body-bg: transparent;
+
+#billboard {
+  background-color: transparent;
+  background: url(https://s3.us-east-2.amazonaws.com/venue-menu-default-photos/billboard.png) no-repeat center center;
+  background-size: 100%;
+  height: 500px;
+}
