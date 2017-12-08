@@ -56,12 +56,12 @@ ActiveRecord::Schema.define(version: 20171207185225) do
     t.string "website"
     t.string "age_restriction"
     t.string "food_options"
-    t.string "parking"
+    t.boolean "parking"
     t.string "hours"
     t.string "phone"
     t.string "dress_code"
     t.string "cover_charge"
-    t.string "cash_only"
+    t.boolean "cash_only"
     t.string "image_url", default: "../../assets/image/default_venue_photo.jpg", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
