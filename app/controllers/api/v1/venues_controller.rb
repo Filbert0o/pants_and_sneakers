@@ -28,8 +28,22 @@ class Api::V1::VenuesController < ApiController
   private
 
   def venue_params
-    params.require(:venue).permit(:name, :address, :city, :state, :zip, :website,
-      :age_restriction, :food_options, :parking, :hours, :phone, :dress_code,
-      :cover_charge, :cash_only, :image_url)
+    params.require(:venue).permit(
+      :name,
+      :address,
+      :city,
+      :state,
+      :zip,
+      :website,
+      :age_restriction,
+      :food_options,
+      :parking,
+      :hours,
+      :phone,
+      :dress_code,
+      :cover_charge,
+      :cash_only,
+      :image_url
+    )
   end
 end

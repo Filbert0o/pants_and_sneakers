@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TextField from '../components/TextField';
 import SelectField from '../components/SelectField';
+import state from "../Constants"
 import { browserHistory } from 'react-router';
 
 class VenueFormContainer extends Component {
@@ -129,7 +130,7 @@ class VenueFormContainer extends Component {
             content={this.state.state}
             label="State*"
             name="state"
-            options={[ "AK","AL","AR","AS","AZ","CA","CO","CT","DC","DE","FL","GA","GU","HI","IA","ID","IL","IN","KS","KY","LA","MA","MD","ME","MI","MN","MO","MS","MT","NC","ND","NE","NH","NJ","NM","NV","NY","OH","OK","OR","PA","PR","RI","SC","SD","TN","TX","UT","VA","VI","VT","WA", "WI","WV","WY"]}
+            options={state}
             onChange={this.handleChange}
           />
           <TextField
