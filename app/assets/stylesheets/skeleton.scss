@@ -1,1 +1,9 @@
 @import "skeleton/loader";
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+$body-bg: transparent;
+
+.flash {
+  position: absolute;
+}

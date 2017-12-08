@@ -2,7 +2,6 @@
 /app/assets/javascripts/bundle.js
 /react/coverage
 /coverage
-Gemfile.lock
 package-lock.json
 .env
 log/development.log

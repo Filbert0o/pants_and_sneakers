@@ -78,7 +78,7 @@ class VenuesIndexContainer extends Component {
       )
     })
     return(
-      <div>
+      <div className='row'>
         <button><Link to={`/venues/new`}>Submit A New Venue</Link></button>
         {venues}
       </div>
