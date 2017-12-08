@@ -2,14 +2,21 @@ require 'rails_helper'
 
 feature 'visitor registers as new user' do
   scenario 'user sees sign up button on home page' do
-    pending
     visit root_path
 
-    expect(page).to have_content 'Sign up'
+    expect(page).to have_content 'Sign Up'
+  end
+
+  scenario 'user sees sign in button on home page' do
+    visit root_path
+
+    expect(page).to have_content 'Sign In'
   end
 
   scenario 'user sucessfully fills out registration form' do
-    visit new_user_registration_path
+    visit root_path
+
+    click_link 'Sign Up'
 
     fill_in 'First Name', with: 'John'
     fill_in 'Last Name', with: 'Smith'
@@ -23,7 +30,9 @@ feature 'visitor registers as new user' do
   end
 
   scenario 'user unsucessfully fills out registration form' do
-    visit new_user_registration_path
+    visit root_path
+    click_link 'Sign Up'
+
     click_button 'Sign up'
 
     expect(page).to have_content "Email can't be blank"
@@ -32,21 +41,14 @@ feature 'visitor registers as new user' do
     expect(page).to have_content "Last name can't be blank"
   end
 
-  scenario 'user edits their account' do
-    user = User.create(
-      first_name: 'John',
-      last_name: 'Smith',
-      email: 'john@firstenglishcolony.edu',
-      password: 'pocahontas'
-    )
+  scenario 'user does not see sign in/sign out buttons when signed in' do
+    user = create(:user)
 
     login_as(user, scope: :user)
+    visit root_path
 
-    visit edit_user_registration_path
-
-    expect(page).to have_content 'Edit'
-    expect(find_field('First Name').value).to eq 'John'
-    expect(find_field('Last Name').value).to eq 'Smith'
-    expect(find_field('Email').value).to eq 'john@firstenglishcolony.edu'
+    expect(page).to_not have_content 'Sign In'
+    expect(page).to_not have_content 'Sign Up'
+    expect(page).to have_content 'Sign Out'
   end
 end

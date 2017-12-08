@@ -10,9 +10,20 @@
   </head>
 
   <body>
-    <p class="flash notice"> <%= notice %> </p>
-    <p class="flash alert"> <%= alert %> </p>
-
+    <header id="utility">
+      <p class="flash notice"> <%= notice %> </p>
+      <p class="flash alert"> <%= alert %> </p>
+      <div class="u-pull-right" id="user_buttons">
+      <% if !current_user %>
+        <%= link_to "Sign In", new_user_session_path %>
+        <%= link_to "Sign Up", new_user_registration_path %>
+      <% else %>
+        <%= "Signed in as #{current_user.first_name}" %>
+        <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+      <% end %>
+      <div class="u-cf"></div>
+      </div>
+    </header>
     <%= yield %>
   </body>
 </html>

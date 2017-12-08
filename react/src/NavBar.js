@@ -14,8 +14,6 @@ const NavBar = props =>{
           <div id='search-bar' className="ten columns">
             <SearchBar />
           </div>
-          <Link to='#'><button className='nav-button'>Sign In</button></Link>&nbsp;
-          <Link to='#'><button className='nav-button'>Sign Up</button></Link>&nbsp;
         </div>
       </div>
       {props.children}
