@@ -16,7 +16,7 @@ feature 'visitor registers as new user' do
   scenario 'user sucessfully fills out registration form' do
     visit root_path
 
-    click_link "Sign Up"
+    click_link 'Sign Up'
 
     fill_in 'First Name', with: 'John'
     fill_in 'Last Name', with: 'Smith'
