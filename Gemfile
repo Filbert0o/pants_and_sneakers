@@ -39,3 +39,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 group :test do
   gem 'coveralls', require: false
 end
+
+# Adding Ruby version per Heroku instructions
+ruby "2.3.3"
