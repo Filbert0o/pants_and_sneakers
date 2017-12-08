@@ -11,7 +11,7 @@ class Api::V1::ReviewsController < ApiController
     review.user = current_user
     venue = Venue.find(params[:venue_id])
     review.venue = venue
-    binding.pry 
+    binding.pry
     if review.save
       render json: review
     else
