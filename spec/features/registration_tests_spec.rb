@@ -32,7 +32,7 @@ feature 'visitor registers as new user' do
   scenario 'user unsucessfully fills out registration form' do
     visit root_path
     click_link 'Sign Up'
-    
+
     click_button 'Sign up'
 
     expect(page).to have_content "Email can't be blank"
