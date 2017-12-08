@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import VenuesIndexTile from "../components/VenuesIndexTile"
+import { Link } from 'react-router';
+import VenuesIndexTile from '../components/VenuesIndexTile';
+import VenueFormContainer from "./VenueFormContainer"
+
 
 class VenuesIndexContainer extends Component {
   constructor(props) {
@@ -33,6 +36,7 @@ class VenuesIndexContainer extends Component {
     this.getVenues();
   }
 
+
   render() {
     let venues = this.state.venues.map((venue) => {
       return(
@@ -50,6 +54,7 @@ class VenuesIndexContainer extends Component {
     })
     return(
       <div className='row'>
+        <button><Link to={`/venues/new`}>Submit A New Venue</Link></button>
         {venues}
       </div>
     )
