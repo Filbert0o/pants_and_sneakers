@@ -12,6 +12,8 @@ engines:
     checks:
       max_line_length:
         enabled: false
+      Rubocop/Style/ClassAndModuleChildren:
+        enabled: false
   duplication:
     enabled: true
     exclude_paths:

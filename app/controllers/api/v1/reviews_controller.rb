@@ -10,14 +10,12 @@ class Api::V1::ReviewsController < ApiController
     review = Review.new(review_params)
     review.rating.to_i
     review.user = current_user
-    venue = Venue.find(params[:venue_id])
-    review.venue = venue
+    review.venue = Venue.find(params[:venue_id])
     if review.save
       render json: review
     else
       render json:
-        { errors: review.errors.full_messages },
-        status: :unprocessable_entity
+        { errors: review.errors.full_messages }, status: :unprocessable_entity
     end
   end
 
