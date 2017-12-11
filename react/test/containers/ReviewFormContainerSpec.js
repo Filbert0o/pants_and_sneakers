@@ -53,7 +53,7 @@ describe('ReviewFormContainer', () => {
     expect(wrapper.find("input[type='submit']").nodes[0].value).toEqual('Submit');
   });
 
-  it('have an errors div', () => {
-    expect(wrapper.find('#errors')).toBePresent()
-  });
+  // it('have an errors div', () => {
+  //   expect(wrapper.find('#errors')).toBePresent()
+  // });
 });
