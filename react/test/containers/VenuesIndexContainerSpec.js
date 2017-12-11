@@ -27,9 +27,7 @@ describe ('VenuesIndexContainer', () => {
   beforeEach(() => {
 
     spyOn(global, 'fetch').and.callFake(() => {
-      let responseBody = JSON.stringify({
-        message: venue1
-      });
+      let responseBody = JSON.stringify(venue1);
       let response = new Response(responseBody, {
         status: '200',
         statusText: 'OK',
@@ -44,36 +42,34 @@ describe ('VenuesIndexContainer', () => {
 
   it('should have an initial state as an empty array', () => {
     expect(wrapper.find('VenuesIndexContainer').first().nodes[0].state.venues).toEqual([]);
-    expect(true).toEqual(true)
   });
 
-  it('should render a div tag', () => {
+  it('should render a div tag', (done) => {
     setTimeout(() => {
       expect(wrapper.find('div')).toBePresent();
-          console.log(wrapper.find('div'))
       done();
     }, 0)
   });
-  //
-  // it('should render a VenuesIndexTile Component', function(done) {
-  //   setTimeout(() => {
-  //     expect(wrapper.find(VenuesIndexTile)).toBePresent();
-  //     done();
-  //   }, 0);
-  // });
-  //
-  // it('should render the VenuesIndexTile with different props, when venues is not an empty array', () => {
-  //   setTimeout(() => {
-  //     expect(wrapper.find(VenuesIndexTile).props()).toEqual({
-  //       id: 1,
-  //       name: "Tattooed Moms",
-  //       address: "504 south st.",
-  //       city: "Philadelphia",
-  //       state: "PA",
-  //       zip: "19109",
-  //       imageUrl: "http://blackonthecanvas.com/wp-content/uploads/2014/04/IMG_6260-1024x683.jpg"
-  //     })
-  //     done();
-  //   }, 0)
-  // });
+
+  it('should render a VenuesIndexTile Component', function(done) {
+    setTimeout(() => {
+      expect(wrapper.find(VenuesIndexTile)).toBePresent();
+      done();
+    }, 0);
+  });
+
+  it('should render the VenuesIndexTile with different props, when venues is not an empty array', () => {
+    setTimeout(() => {
+      expect(wrapper.find(VenuesIndexTile).props()).toEqual({
+        id: 1,
+        name: "Tattooed Moms",
+        address: "504 south st.",
+        city: "Philadelphia",
+        state: "PA",
+        zip: "19109",
+        imageUrl: "http://blackonthecanvas.com/wp-content/uploads/2014/04/IMG_6260-1024x683.jpg"
+      })
+      done();
+    }, 0)
+  });
 })
