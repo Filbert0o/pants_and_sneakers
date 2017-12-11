@@ -4,5 +4,6 @@ FactoryBot.define do
     last_name  'Smith'
     email 'john@firstenglishcolony.edu'
     password 'pocahontas'
+    role 'member'
   end
 end

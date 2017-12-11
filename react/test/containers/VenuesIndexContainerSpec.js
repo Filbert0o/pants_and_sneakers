@@ -46,7 +46,7 @@ describe ('VenuesIndexContainer', () => {
   });
 
   it('should have an initial state as an empty array', () => {
-    expect(wrapper.state()).toEqual({ venues: [] })
+    expect(wrapper.state()).toEqual({ venues: [], currentUser:  null })
   });
 
   it('should render a div tag', () => {
