@@ -15,7 +15,7 @@ class Api::V1::ReviewsController < ApiController
     if review.save
       render json: review
     else
-      render json: { error: review.errors.full_messages }, status: :unprocessable_entity
+      render json: { errors: review.errors.full_messages }, status: :unprocessable_entity
     end
   end
 

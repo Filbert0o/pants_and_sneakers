@@ -9,7 +9,7 @@ const SelectField = props =>{
   return(
     <label>{props.label}
       <select name={props.name} value={props.content} onChange={props.onChange}>
-        <option value=''>Chose {props.label}</option>
+        <option value=''>Choose {props.label}</option>
         {multipleOptions}
       </select>
     </label>

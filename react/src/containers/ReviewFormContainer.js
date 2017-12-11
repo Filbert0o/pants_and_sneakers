@@ -8,7 +8,8 @@ class ReviewFormContainer extends Component {
     this.state = {
       rating: '',
       review_text: '',
-      venue_id: this.props.params.venue_id
+      venue_id: this.props.params.venue_id,
+      errors: []
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
@@ -34,6 +35,18 @@ class ReviewFormContainer extends Component {
     this.handleClearForm(event);
   }
 
+  processResponse(response) {
+    return new Promise((resolve, reject) => {
+      let func;
+      response.status < 400 ? func = resolve : func = reject;
+      response.json().then(data => func({'status': response.status,
+                                         'statusText': response.statusText,
+                                         'data': data
+                                       })
+                          );
+    });
+  }
+
   addNewReview(newReview) {
     fetch('/api/v1/reviews', {
       credentials: 'same-origin',
@@ -41,20 +54,17 @@ class ReviewFormContainer extends Component {
       body: JSON.stringify(newReview),
       headers: {'Content-Type': 'application/json'}
     })
-    .then(response => {
-      if (response.ok) {
-        return response;
-      } else {
-        let errorMessage = `${response.status} (${response.statusText})`,
-        error = new Error(errorMessage);
-        throw(error);
-      }
-    })
-    .then(response => response.json())
+    .then(response => this.processResponse(response))
     .then(body => {
       browserHistory.push(`/reviews`);
     })
-    .catch(error => console.error(`Error in fetch: ${error.message}`));
+    .catch(response => {
+      this.setState({
+        errors: response.data.errors
+      });
+      let errorMessage = `${response.status} (${response.statusText})`;
+      console.error(`Error in fetch: ${errorMessage}`);
+    });
   }
 
   handleClearForm(event){
@@ -68,6 +78,9 @@ class ReviewFormContainer extends Component {
   render() {
     return(
       <div>
+        <div id='errors'>
+          {this.state.errors}
+        </div>
         <form className="new-review-form callout" onSubmit={this.handleFormSubmit}>
           <SelectField
             content={this.state.rating}
