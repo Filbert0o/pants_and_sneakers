@@ -1,3 +1,4 @@
+# reviews controller for API calls
 class Api::V1::ReviewsController < ApiController
   skip_before_action :verify_authenticity_token
   def new
@@ -11,11 +12,12 @@ class Api::V1::ReviewsController < ApiController
     review.user = current_user
     venue = Venue.find(params[:venue_id])
     review.venue = venue
-    binding.pry
     if review.save
       render json: review
     else
-      render json: { errors: review.errors.full_messages }, status: :unprocessable_entity
+      render json:
+        { errors: review.errors.full_messages },
+        status: :unprocessable_entity
     end
   end
 
