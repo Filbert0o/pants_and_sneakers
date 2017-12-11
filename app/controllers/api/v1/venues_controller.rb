@@ -48,5 +48,4 @@ class Api::V1::VenuesController < ApplicationController
       :image_url
     )
   end
-
 end
