@@ -78,9 +78,7 @@ class ReviewFormContainer extends Component {
   render() {
     return(
       <div>
-        <div id='errors'>
-          {this.state.errors}
-        </div>
+        <div id='errors'>{this.state.errors}</div>
         <form className="new-review-form callout" onSubmit={this.handleFormSubmit}>
           <SelectField
             content={this.state.rating}
