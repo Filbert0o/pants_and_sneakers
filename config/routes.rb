@@ -10,8 +10,4 @@ Rails.application.routes.draw do
       resources :venues, only: [:index, :show, :new, :create]
     end
   end
-
-  # scope :auth do
-  #   get 'is_signed_in', to: 'auth#is_signed_in?'
-  # end
 end
