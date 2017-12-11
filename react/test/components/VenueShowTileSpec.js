@@ -18,12 +18,12 @@ describe('VenueShowTile', () => {
         website="google.com"
         ageRestriction="21+"
         foodOptions="bar food"
-        parking={false}
+        parking='none'
         hours="monday - sunday"
         phone="215-555-5555"
         dressCode="suit"
         coverCharge="5 bucks"
-        cashOnly={false}
+        cashOnly='none'
         imageUrl="http://blackonthecanvas.com/wp-content/uploads/2014/04/IMG_6260-1024x683.jpg"
       />
     )
