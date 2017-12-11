@@ -51,13 +51,6 @@ describe ('VenuesIndexContainer', () => {
     }, 0)
   });
 
-  it('should render a VenuesIndexTile Component', function(done) {
-    setTimeout(() => {
-      expect(wrapper.find(VenuesIndexTile)).toBePresent();
-      done();
-    }, 0);
-  });
-
   it('should render the VenuesIndexTile with different props, when venues is not an empty array', () => {
     setTimeout(() => {
       expect(wrapper.find(VenuesIndexTile).props()).toEqual({
