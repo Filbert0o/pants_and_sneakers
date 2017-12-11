@@ -12,8 +12,6 @@ class ApplicationController < ActionController::Base
 
   def authorize_user
     unless user_signed_in? || current_user.admin?
-      raise StandardError, 'Not Found'
-      fail 'Not Found'
       raise ActionController::RoutingError.new('Not Found')
     end
   end
