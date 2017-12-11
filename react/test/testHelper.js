@@ -2,14 +2,12 @@ import { shallow, mount } from 'enzyme';
 import jasmineEnzyme from 'jasmine-enzyme';
 import React from 'react';
 import 'jasmine-ajax';
-import $ from 'jquery';
 
 Object.assign(global, {
   jasmineEnzyme,
   mount,
   React,
-  shallow,
-  $
+  shallow
 });
 
 beforeEach(() => {
