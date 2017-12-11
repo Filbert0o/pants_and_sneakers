@@ -1,9 +1,11 @@
 # this is Api Venues Controller
-class Api::V1::VenuesController < ApiController
+class Api::V1::VenuesController < ApplicationController
   skip_before_action :verify_authenticity_token
+  before_action :authenticate_user!, except: [:index, :show]
+
   def index
     venues = Venue.all
-    render json: venues
+    render json: { venues: venues, current_user: current_user }
   end
 
   def show

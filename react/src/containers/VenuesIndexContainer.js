@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+import { Link, browserHistory } from 'react-router';
 import VenuesIndexTile from '../components/VenuesIndexTile';
 import VenueFormContainer from "./VenueFormContainer"
 
@@ -8,12 +8,16 @@ class VenuesIndexContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      venues: []
+      venues: [],
+      currentUser: null
     }
+    this.handleClick = this.handleClick.bind(this)
   }
 
   getVenues () {
-    fetch('/api/v1/venues')
+    fetch('/api/v1/venues', {
+      credentials: 'same-origin'
+    })
     .then(response => {
       if (response.ok) {
         return response;
@@ -26,7 +30,8 @@ class VenuesIndexContainer extends Component {
     .then(response => response.json())
     .then(body => {
       this.setState({
-       venues: body
+       venues: body.venues,
+       currentUser: body.current_user
       })
     })
     .catch(error => console.error(`Error in fetch: ${error.message}`));
@@ -34,6 +39,11 @@ class VenuesIndexContainer extends Component {
 
   componentDidMount() {
     this.getVenues();
+  }
+
+  handleClick(event) {
+    event.preventDefault();
+    browserHistory.push('/venues/new')
   }
 
 
@@ -52,9 +62,14 @@ class VenuesIndexContainer extends Component {
         />
       )
     })
+    let button;
+    if (!!this.state.currentUser) {
+      button = <button><Link to={`/venues/new`}>Submit A New Venue</Link></button>
+    }
+
     return(
       <div className='row'>
-        <button><Link to={`/venues/new`}>Submit A New Venue</Link></button>
+        {button}
         {venues}
       </div>
     )
