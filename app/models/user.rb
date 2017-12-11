@@ -7,5 +7,9 @@ class User < ApplicationRecord
 
   has_many :reviews
 
-  validates_presence_of :first_name, :last_name
+  validates_presence_of :first_name, :last_name, :role
+
+  def admin?
+    role == 'admin'
+  end
 end

@@ -24,6 +24,7 @@ describe Api::V1::VenuesController, type: :controller do
     it 'should return a list of all the venues' do
       get :index
       returned_json = JSON.parse(response.body)
+      returned_json = returned_json['venues']
 
       expect(response.status).to eq 200
       expect(response.content_type).to eq('application/json')
@@ -40,6 +41,16 @@ describe Api::V1::VenuesController, type: :controller do
       expect(returned_json[1]['city']).to eq 'Manhattan'
       expect(returned_json[1]['state']).to eq 'NY'
       expect(returned_json[1]['zip']).to eq '10018'
+    end
+  end
+
+  describe 'GET#index' do
+    it 'should return current user' do
+      get :index
+      returned_json = JSON.parse(response.body)
+      returned_json = returned_json['current_user']
+
+      expect(returned_json).to eq nil
     end
   end
 end
