@@ -33,12 +33,17 @@ describe('VenueShowTile', () => {
     expect(wrapper.find('div','img')).toBePresent();
   });
 
+  // it('should render a h1 tag with name', () => {
+  //   expect(wrapper.find('h1').text()).toBe('Tattooed Moms')
+  // });
+
   it('should render a div tag with props', () => {
-    expect(wrapper.find('div').text()).toBe('Tattooed Moms504 south st.PhiladelphiaPA19109google.com21+bar foodmonday - sunday215-555-5555suit5 bucks')
+    expect(wrapper.find('div').at(0).text()).toBe('Tattooed MomsAddress:504 south st.Philadelphia, PA., 19109Contact Info:Website: google.comPhone Number: 215-555-5555Hours: monday - sundayVenue Info:Age Restriction: 21+Food: bar foodParking: noneDress Code: suitCover Charge: 5 bucksCash Only: none')
   });
 
   it('should render an img tag with the specific props', () => {
     expect(wrapper.find('img').props()).toEqual({
+      className: 'show-img',
       src: 'http://blackonthecanvas.com/wp-content/uploads/2014/04/IMG_6260-1024x683.jpg'
     });
   });
