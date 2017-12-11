@@ -13,17 +13,17 @@ describe('VenueFormContainer', () =>{
     expect(wrapper.find('label').at(0).text()).toBe('Venue Name*');
     expect(wrapper.find('label').at(1).text()).toBe('Street Address*');
     expect(wrapper.find('label').at(2).text()).toBe('City*');
-    expect(wrapper.find('label').at(3).text()).toBe('State*Chose State*AKALARASAZCACOCTDCDEFLGAGUHIIAIDILINKSKYLAMAMDMEMIMNMOMSMTNCNDNENHNJNMNVNYOHOKORPAPRRISCSDTNTXUTVAVIVTWAWIWVWY');
+    expect(wrapper.find('label').at(3).text()).toBe('State*Choose State*AKALARASAZCACOCTDCDEFLGAGUHIIAIDILINKSKYLAMAMDMEMIMNMOMSMTNCNDNENHNJNMNVNYOHOKORPAPRRISCSDTNTXUTVAVIVTWAWIWVWY');
     expect(wrapper.find('label').at(4).text()).toBe('Zip*');
     expect(wrapper.find('label').at(5).text()).toBe('Venue Website');
-    expect(wrapper.find('label').at(6).text()).toBe('Age RestrictionChose Age RestrictionAll Ages18+21+');
-    expect(wrapper.find('label').at(7).text()).toBe('Food OptionsChose Food OptionsNoneLimited MenuFull Menu');
-    expect(wrapper.find('label').at(8).text()).toBe('ParkingChose ParkingHas Parking LotNo Parking Lot');
+    expect(wrapper.find('label').at(6).text()).toBe('Age RestrictionChoose Age RestrictionAll Ages18+21+');
+    expect(wrapper.find('label').at(7).text()).toBe('Food OptionsChoose Food OptionsNoneLimited MenuFull Menu');
+    expect(wrapper.find('label').at(8).text()).toBe('ParkingChoose ParkingHas Parking LotNo Parking Lot');
     expect(wrapper.find('label').at(9).text()).toBe('Business Hours');
     expect(wrapper.find('label').at(10).text()).toBe('Venue Phone');
     expect(wrapper.find('label').at(11).text()).toBe('Dress Code');
-    expect(wrapper.find('label').at(12).text()).toBe('Cover ChargeChose Cover ChargeYESNODepends');
-    expect(wrapper.find('label').at(13).text()).toBe('Cash OnlyChose Cash OnlyNOYES');
+    expect(wrapper.find('label').at(12).text()).toBe('Cover ChargeChoose Cover ChargeYESNODepends');
+    expect(wrapper.find('label').at(13).text()).toBe('Cash OnlyChoose Cash OnlyNOYES');
     expect(wrapper.find('label').at(14).text()).toBe('Venue Cover Photo');
   });
 
