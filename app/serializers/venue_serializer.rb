@@ -1,3 +1,4 @@
+# Venue Serializer
 class VenueSerializer < ActiveModel::Serializer
   attributes  :id,
               :name,

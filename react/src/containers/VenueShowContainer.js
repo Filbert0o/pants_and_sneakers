@@ -38,8 +38,7 @@ class VenueShowContainer extends Component {
     this.getVenue()
   }
 
-
-  render() {
+  mapReviews() {
     let reviews = this.state.reviews.map(review => {
       return(
         <ReviewTile
@@ -53,6 +52,10 @@ class VenueShowContainer extends Component {
         />
       );
     })
+    return reviews;
+  }
+
+  render() {
     return(
       <div>
         <VenueShowTile
@@ -75,7 +78,7 @@ class VenueShowContainer extends Component {
           imageUrl={this.state.venue.image_url}
         />
         <div>
-          {reviews}
+          {this.mapReviews()}
         </div>
       </div>
     );

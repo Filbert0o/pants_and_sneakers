@@ -14,8 +14,8 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.5'
 gem 'devise'
+gem 'active_model_serializers', '~> 0.10.0'
 gem 'factory_bot'
-gem "active_model_serializers", '~> 0.10.0'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
