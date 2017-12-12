@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import VenueShowTile from "../components/VenueShowTile"
+import VenueReviewContainer from "./VenueReviewContainer"
 
 class VenueShowContainer extends Component {
   constructor(props) {
@@ -57,6 +58,9 @@ class VenueShowContainer extends Component {
           coverCharge={this.state.venue.cover_charge}
           cashOnly={this.state.venue.cash_only}
           imageUrl={this.state.venue.image_url}
+        />
+        <VenueReviewContainer
+          venueId={this.props.params.id}
         />
       </div>
     )
