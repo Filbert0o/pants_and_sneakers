@@ -25,40 +25,28 @@ describe ('VenuesIndexContainer', () => {
   }]
 
   beforeEach(() => {
-    jasmineEnzyme();
-    wrapper = mount(
-      <VenuesIndexContainer
-        data={venue1}
-      />
-    )
 
     spyOn(global, 'fetch').and.callFake(() => {
-      let responseBody = JSON.stringify({
-        message: venue1
-      });
+      let responseBody = JSON.stringify(venue1);
       let response = new Response(responseBody, {
         status: '200',
         statusText: 'OK',
         headers: { 'Content-Type': 'application/json' }
       });
       return Promise.resolve(response);
-    })
+    });
+
+    wrapper = mount(<VenuesIndexContainer />);
+
   });
 
   it('should have an initial state as an empty array', () => {
-    expect(wrapper.state()).toEqual({ venues: [], currentUser:  null })
+    expect(wrapper.find('VenuesIndexContainer').first().nodes[0].state.venues).toEqual([]);
   });
 
-  it('should render a div tag', () => {
+  it('should render a div tag', (done) => {
     setTimeout(() => {
       expect(wrapper.find('div')).toBePresent();
-      done();
-    }, 0)
-  });
-
-  it('should render a VenuesIndexTile Component', () => {
-    setTimeout(() => {
-      expect(wrapper.find(VenuesIndexTile)).toBePresent();
       done();
     }, 0)
   });

@@ -2,7 +2,7 @@ import React from 'react';
 
 const VenueShowTile = props => {
   return(
-    <div>
+    <div className='vst'>
       <img className='show-img' src={props.imageUrl}/>
       <h1 className='title-show'>{props.name}</h1>
       <div className='row'>
