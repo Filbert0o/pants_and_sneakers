@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'active_model_serializers', '~> 0.10.0'
 gem 'rails', '~> 5.1.4'
 gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.7'
@@ -14,7 +15,6 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.5'
 gem 'devise'
-gem 'active_model_serializers', '~> 0.10.0'
 gem 'factory_bot'
 
 group :development, :test do
