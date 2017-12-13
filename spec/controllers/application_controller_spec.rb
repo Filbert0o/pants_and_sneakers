@@ -1,8 +1,18 @@
 require 'rails_helper'
 
 describe ApplicationController, type: :controller do
-  it 'should have an authorize_user function' do
-    # puts current_user
-    # expect(controller.instance_eval{authorize_user}.exists?).to be true
+  describe 'ApplicationController#authorize_user' do
+    it 'should return false if no user signed in' do
+
+    end
+
+    it 'should return false if no user signed in' do
+
+    end
+
+    it 'should return false if no user signed in' do
+
+    end
+
   end
 end
