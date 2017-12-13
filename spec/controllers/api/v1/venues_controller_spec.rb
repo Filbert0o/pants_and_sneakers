@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'json'
 
 describe Api::V1::VenuesController, type: :controller do
   # let!(:first_venue) do
@@ -59,7 +60,6 @@ describe Api::V1::VenuesController, type: :controller do
   end
 
   describe 'GET#show' do
-
     before do
       get :show, params: {id: first_venue.id}
       @body = JSON.parse(response.body)
@@ -79,6 +79,29 @@ describe Api::V1::VenuesController, type: :controller do
     it 'should return an array of reviews in a key :reviews' do
       expect(@body['reviews']).to be_truthy
       expect(@body['reviews'].class).to eq(Array)
+    end
+  end
+
+  describe 'POST#create' do
+    it 'should create a new venue' do
+      @user = create(:user)
+      sign_in @user
+
+      data = {venue: {
+        name: "Test Venue",
+        address: "123 Main St.",
+        city: "Philadelphia",
+        state: "PA",
+        zip: "19107"
+      }}
+
+
+      expect{
+        post :create, params: data
+      }.to change(Venue, :count).by(1)
+
+      expect(Venue.last.name).to eq("Test Venue")
+
     end
   end
 end
