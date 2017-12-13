@@ -2,7 +2,7 @@ import VenueShowTile from '../../src/components/VenueShowTile';
 import VenueShowContainer from '../../src/containers/VenueShowContainer';
 import ReviewTile from '../../src/components/ReviewTile'
 
-describe ('VenuesShowContainer', () => {
+describe ('VenueShowContainer', () => {
   let wrapper;
   let venue1 = {
     "id": 1,
@@ -120,7 +120,6 @@ describe ('VenuesShowContainer', () => {
 
   it('should render a review tile for each review', (done) => {
     setTimeout( () => {
-      console.log(wrapper.find(ReviewTile).nodes[0].props)
       expect(wrapper.find(ReviewTile).nodes[0].props).toEqual({
         "id": 1,
         "rating": 1,
