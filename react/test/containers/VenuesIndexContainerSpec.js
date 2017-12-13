@@ -30,7 +30,6 @@ describe ('VenuesIndexContainer', () => {
 
     spyOn(global, 'fetch').and.callFake(() => {
       let responseBody = JSON.stringify(venue1);
-      console.log(responseBody)
       let response = new Response(responseBody, {
         status: '200',
         statusText: 'OK',
