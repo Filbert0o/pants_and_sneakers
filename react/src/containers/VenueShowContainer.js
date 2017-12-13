@@ -7,9 +7,54 @@ class VenueShowContainer extends Component {
     super(props);
     this.state = {
       venue: {},
-      reviews: []
+      reviews: [],
+      upvoteNumber: 0,
+      downvoteNumber: 0,
+      upvote: null,
+      downvote: null
     }
   }
+
+
+  updateVote(review_id){
+    let newVote = {
+      upvotes: this.state.upvoteNumber,
+      downvotes: this.state.downvoteNumber
+    }
+    fetch(`api/v1/reviews/${review_id}`, {
+      credentials: 'same-origin',
+      method: 'UPDATE',
+      body: JSON.stringify(newVote),
+      headers: {'Content-Type': 'application/json'}
+    })
+    .then(response => {
+      if (response.ok) {
+        return response;
+      } else {
+        let errorMessage = `${response.status} (${response.statusText})`,
+        error = new Error(errorMessage);
+        throw(error);
+      }
+    })
+    .then(response => response.json())
+    .then(body => {
+
+    })
+    .catch(error => console.error(`Error in fetch: ${error.message}`));
+  }
+
+  handleVoteChange(event) {
+    if(upvote){
+      this.setState({
+        upvoteNumber: this.state.upvoteNumber += 1
+      });
+    } else {
+      this.setState({
+        downvoteNumber: this.state.downvoteNumber += 1
+      })
+    }
+  }
+
 
   getVenue() {
     let venueId = this.props.params.id

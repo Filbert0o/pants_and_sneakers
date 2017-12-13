@@ -12,7 +12,7 @@ Rails.application.routes.draw do
       resources :venues, only: [:index, :show, :new, :create] do
         resources :reviews, only: [:index]
       end
-      resources :reviews, only: [:index, :create]
+      resources :reviews, only: [:index, :show, :create, :update]
     end
   end
 end
