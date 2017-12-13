@@ -43,7 +43,10 @@ describe ('UsersIndexContainer', () => {
   });
 
   it('should have an intial state of an empty array', () => {
-    expect(wrapper.find('UsersIndexContainer').first().nodes[0].state.users).toEqual([]);
+    expect(wrapper.state()).toEqual({
+      users: [],
+      currentUser: null
+    })
   });
 
   it('should render a div tag', (done) => {
