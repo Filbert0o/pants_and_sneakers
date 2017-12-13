@@ -3,7 +3,13 @@ import VenuesIndexTile from '../../src/components/VenuesIndexTile';
 
 describe ('VenuesIndexContainer', () => {
   let wrapper;
-  let venue1 = [{
+  let venue1 = {
+    venues: [
+
+    ]
+  }
+
+  [{
     id: 1,
     name: "Tattooed Moms",
     address: "504 south st.",
@@ -28,6 +34,7 @@ describe ('VenuesIndexContainer', () => {
 
     spyOn(global, 'fetch').and.callFake(() => {
       let responseBody = JSON.stringify(venue1);
+      console.log(responseBody)
       let response = new Response(responseBody, {
         status: '200',
         statusText: 'OK',
@@ -51,8 +58,9 @@ describe ('VenuesIndexContainer', () => {
     }, 0)
   });
 
-  it('should render the VenuesIndexTile with different props, when venues is not an empty array', () => {
+  it('should render the VenuesIndexTile with different props, when venues is not an empty array', (done) => {
     setTimeout(() => {
+      //console.log(wrapper.find(VenuesIndexTile).nodes[0].props)
       expect(wrapper.find(VenuesIndexTile).props()).toEqual({
         id: 1,
         name: "Tattooed Moms",

@@ -120,7 +120,6 @@ describe ('VenueShowContainer', () => {
 
   it('should render a review tile for each review', (done) => {
     setTimeout( () => {
-      console.log(wrapper.find(ReviewTile).nodes[0].props)
       expect(wrapper.find(ReviewTile).nodes[0].props).toEqual({
         "id": 1,
         "rating": 1,
