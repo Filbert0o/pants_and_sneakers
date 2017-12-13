@@ -2,15 +2,6 @@ require 'rails_helper'
 require 'json'
 
 describe Api::V1::VenuesController, type: :controller do
-  # let!(:first_venue) do
-  #   Venue.create(
-  #     name: 'Jonnys',
-  #     address: '123 main st.',
-  #     city: 'Philadelphia',
-  #     state: 'PA',
-  #     zip: '19103'
-  #   )
-  # end
   let!(:first_venue) {create(:venue)}
 
   let!(:second_venue) do
@@ -22,8 +13,6 @@ describe Api::V1::VenuesController, type: :controller do
       zip: '10018'
     )
   end
-
-
 
   describe 'GET#index' do
     it 'should return a list of all the venues' do
@@ -94,7 +83,6 @@ describe Api::V1::VenuesController, type: :controller do
         state: "PA",
         zip: "19107"
       }}
-
 
       expect{
         post :create, params: data

@@ -1,10 +1,6 @@
 # reviews controller for API calls
-class Api::V1::ReviewsController < ApiController
+class Api::V1::ReviewsController < ApplicationController
   skip_before_action :verify_authenticity_token
-  def new
-    review = Review.new
-    render json: review
-  end
 
   def create
     review = Review.new(review_params)
