@@ -1,7 +1,7 @@
 import VenueShowContainer from '../../src/containers/VenueShowContainer';
 import VenueShowTile from '../../src/components/VenueShowTile';
 
-describe ('VenuesShowContainer', () => {
+describe ('VenueShowContainer', () => {
   let wrapper;
   let venue1 = {
     id: 1,

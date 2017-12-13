@@ -41,4 +41,4 @@ group :test do
 end
 
 # Adding Ruby version per Heroku instructions
-ruby "2.3.3"
+ruby '2.3.3'
