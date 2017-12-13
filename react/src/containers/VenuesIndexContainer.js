@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link, browserHistory } from 'react-router';
 import VenuesIndexTile from '../components/VenuesIndexTile';
-import VenueFormContainer from "./VenueFormContainer"
+import VenueFormContainer from './VenueFormContainer';
 
 
 class VenuesIndexContainer extends Component {
@@ -10,9 +10,9 @@ class VenuesIndexContainer extends Component {
     this.state = {
       venues: [],
       currentUser: null
-    }
-    this.handleClick = this.handleClick.bind(this)
-    this.getVenues = this.getVenues.bind(this)
+    };
+    this.handleClick = this.handleClick.bind(this);
+    this.getVenues = this.getVenues.bind(this);
   }
 
   getVenues() {
@@ -33,7 +33,7 @@ class VenuesIndexContainer extends Component {
       this.setState({
        venues: body.venues,
        currentUser: body.current_user
-      })
+     });
     })
     .catch(error => console.error(`Error in fetch: ${error.message}`));
   }
@@ -44,7 +44,7 @@ class VenuesIndexContainer extends Component {
 
   handleClick(event) {
     event.preventDefault();
-    browserHistory.push('/venues/new')
+    browserHistory.push('/venues/new');
   }
 
 

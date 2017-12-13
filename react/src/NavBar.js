@@ -8,7 +8,7 @@ const NavBar = props =>{
     <div>
       <div id='header'>
         <div id='billboard'>
-          <h2>Venue Menu</h2>
+          <h2><Link to={`/venues`} style={{ textDecoration: 'none', color: '#fff' }}>Venue Menu</Link></h2>
         </div>
         <div id='nav-bar'>
           <div id='search-bar' className="ten columns">

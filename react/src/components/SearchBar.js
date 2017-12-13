@@ -1,67 +1,102 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 import Autosuggest from 'react-autosuggest';
 
 const venues = [
   {
-    name: 'Nice Bar'
+    name: "Jason's Bar"
   },
   {
-    name: 'Not Nice Bar'
+    name: "Jason's Other Bar"
   },
   {
-    name: 'Jasons Bar'
+    name: "Jason's Crappy Bar"
   }
 ];
 
-const getSuggestions = value => {
-  const inputValue = value.trim().toLowerCase();
-  const inputLength = inputValue.length;
 
-  return inputLength === 0 ? [] : venues.filter(venue =>
-    venue.name.toLowerCase().slice(0, inputLength) === inputValue
-  );
-};
-
-const getSuggestionValue = suggestion => suggestion.name;
-
-const renderSuggestion = suggestion => (
-  <div>
-    {suggestion.name}
-  </div>
-);
 
 class SearchBar extends Component {
   constructor() {
     super();
     this.state = {
       value: '',
-      suggestions: []
+      suggestions: [],
+      venues: []
     };
 
-    this.onChange = this.onChange.bind(this)
-    this.onSuggestionsFetchRequested = this.onSuggestionsFetchRequested.bind(this)
-    this.onSuggestionsClearRequested = this.onSuggestionsClearRequested.bind(this)
+    this.onChange = this.onChange.bind(this);
+    this.onSuggestionsFetchRequested = this.onSuggestionsFetchRequested.bind(this);
+    this.onSuggestionsClearRequested = this.onSuggestionsClearRequested.bind(this);
+    this.getSuggestions = this.getSuggestions.bind(this);
+    this.renderSuggestion = this.renderSuggestion.bind(this);
   }
 
   onChange(event, { newValue }) {
     this.setState({
       value: newValue
     });
-  };
+  }
 
   onSuggestionsFetchRequested({ value }) {
     this.setState({
-      suggestions: getSuggestions(value)
+      suggestions: this.getSuggestions(value)
     });
-  };
+  }
 
   onSuggestionsClearRequested() {
     this.setState({
       suggestions: []
     });
-  };
+  }
+
+  getVenues() {
+    fetch('/api/v1/venues', {
+      credentials: 'same-origin'
+    })
+    .then(response => {
+      if (response.ok) {
+        return response;
+      } else {
+        let errorMessage = `${response.status} (${response.statusText})`,
+        error = new Error(errorMessage);
+        throw(error);
+      }
+    })
+    .then(response => response.json())
+    .then(body => {
+      this.setState({
+       venues: body.venues
+     });
+    })
+    .catch(error => console.error(`Error in fetch: ${error.message}`));
+  }
+
+  componentDidMount() {
+    this.getVenues();
+  }
+
+  getSuggestions(value) {
+    let inputValue = value.trim().toLowerCase();
+    let inputLength = inputValue.length;
+
+    return inputLength === 0 ? [] : this.state.venues.filter(venue =>
+    venue.name.toLowerCase().slice(0, inputLength) === inputValue
+  );
+  }
+
+  getSuggestionValue(suggestion) { return suggestion.name; }
+
+  renderSuggestion(suggestion) {
+    return(
+      <div>
+        <Link to={`/venues/${suggestion.id}`} style={{ textDecoration: 'none', color: '#fff' }}>{suggestion.name}</Link>
+      </div>
+    )
+  }
 
   render() {
+
     const { value, suggestions } = this.state;
 
     const inputProps = {
@@ -71,14 +106,16 @@ class SearchBar extends Component {
     };
 
     return (
-      <Autosuggest
-        suggestions={suggestions}
-        onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
-        onSuggestionsClearRequested={this.onSuggestionsClearRequested}
-        getSuggestionValue={getSuggestionValue}
-        renderSuggestion={renderSuggestion}
-        inputProps={inputProps}
-      />
+      <div className='suggestions-container'>
+        <Autosuggest
+          suggestions={suggestions}
+          onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
+          getSuggestionValue={this.getSuggestionValue}
+          renderSuggestion={this.renderSuggestion}
+          inputProps={inputProps}
+          onSuggestionsClearRequested={this.onSuggestionsClearRequested}
+        />
+      </div>
     );
   }
 }
