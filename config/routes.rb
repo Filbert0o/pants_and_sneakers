@@ -11,7 +11,12 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :venues, only: [:index, :show, :create] do
       end
-      resources :reviews, only: [:create]
+      resources :reviews, only: [:index, :create]
+      resources :users
     end
+  end
+
+  namespace :admin do
+    resources :users
   end
 end
