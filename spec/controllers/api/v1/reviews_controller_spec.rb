@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe Api::V1::ReviewsController, type: :controller do
   describe 'POST#create' do
-    it 'should create a new venue', focus: true do
+    it 'should create a new venue' do
       @user = create(:user)
       sign_in @user
 
