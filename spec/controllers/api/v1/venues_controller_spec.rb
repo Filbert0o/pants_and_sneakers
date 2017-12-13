@@ -72,7 +72,7 @@ describe Api::V1::VenuesController, type: :controller do
   end
 
   describe 'POST#create' do
-    it 'should create a new venue' do
+    it 'should create a new venue with valid params' do
       @user = create(:user)
       sign_in @user
 
@@ -90,6 +90,33 @@ describe Api::V1::VenuesController, type: :controller do
 
       expect(Venue.last.name).to eq("Test Venue")
 
+    end
+
+    it 'should return an array of errors in json with invalid params', focus: true do
+      @user = create(:user)
+      sign_in @user
+
+      data = {
+        venue: {
+          name: "",
+          address: "",
+          city: "",
+          state: "",
+          zip: ""
+          }
+        }
+
+      post :create, params: data
+      body = JSON.parse(response.body)
+
+      expect(body['error']).to be_truthy
+      expect(body['error'].class).to eq(Array)
+
+      expect(body['error']).to include("Name can't be blank")
+      expect(body['error']).to include("Address can't be blank")
+      expect(body['error']).to include("City can't be blank")
+      expect(body['error']).to include("State can't be blank")
+      expect(body['error']).to include("Zip can't be blank")
     end
   end
 end
