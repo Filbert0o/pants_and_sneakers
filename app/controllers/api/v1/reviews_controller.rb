@@ -30,7 +30,10 @@ class Api::V1::ReviewsController < ApiController
   end
 
   def update
-    Review.update(params[:id], user: current_user)
+    review = Review.find(params[:id])
+    review.update
+
+    render json: review
   end
 
   private

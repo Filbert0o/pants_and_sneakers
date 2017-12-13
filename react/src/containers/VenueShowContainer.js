@@ -10,24 +10,26 @@ class VenueShowContainer extends Component {
       reviews: [],
       upvoteNumber: 0,
       downvoteNumber: 0,
-      upvote: null,
-      downvote: null
+      vote: 0
     }
+    this.handleVoteSubmit = this.handleVoteSubmit.bind(this)
+    this.handleVoteConfirm = this.handleVoteConfirm.bind(this)
   }
 
 
-  updateVote(review_id){
+  updateVote(reviewId){
     let newVote = {
       upvotes: this.state.upvoteNumber,
       downvotes: this.state.downvoteNumber
     }
-    fetch(`api/v1/reviews/${review_id}`, {
+    fetch(`/api/v1/reviews/${reviewId}`, {
       credentials: 'same-origin',
-      method: 'UPDATE',
+      method: 'PATCH',
       body: JSON.stringify(newVote),
       headers: {'Content-Type': 'application/json'}
     })
     .then(response => {
+      debugger
       if (response.ok) {
         return response;
       } else {
@@ -38,23 +40,37 @@ class VenueShowContainer extends Component {
     })
     .then(response => response.json())
     .then(body => {
-
+      debugger
     })
     .catch(error => console.error(`Error in fetch: ${error.message}`));
   }
 
-  handleVoteChange(event) {
-    if(upvote){
+  handleVoteConfirm(event) {
+    this.setState({
+      vote: event.target.value
+    })
+  }
+
+  handleVoteChange() {
+    if(this.state.vote === 0){
+    }
+    else if (vote === 1) {
       this.setState({
         upvoteNumber: this.state.upvoteNumber += 1
       });
-    } else {
+    }
+    else if (this.state.vote === 2) {
       this.setState({
         downvoteNumber: this.state.downvoteNumber += 1
       })
     }
   }
 
+  handleVoteSubmit(reviewId) {
+    //event.preventDefault();
+    this.handleVoteChange();
+    this.updateVote(reviewId);
+  }
 
   getVenue() {
     let venueId = this.props.params.id
@@ -94,6 +110,8 @@ class VenueShowContainer extends Component {
           user={review.user}
           upvotes={review.upvotes}
           downvotes={review.downvotes}
+          handleVoteSubmit={this.handleVoteSubmit}
+          handleVoteConfirm={this.handleVoteConfirm}
         />
       );
     })
