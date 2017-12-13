@@ -10,18 +10,15 @@ describe Api::V1::ReviewsController, type: :controller do
 
       data = {
         review: {
-          rating: "5",
-          review_text: "So good"
+          rating: '5',
+          review_text: 'So good'
         },
         venue_id: @venue.id
       }
 
-      expect{
-        post :create, params: data
-      }.to change(Review, :count).by(1)
+      expect { post :create, params: data }.to change(Review, :count).by(1)
 
-      expect(Review.last.review_text).to eq("So good")
-
+      expect(Review.last.review_text).to eq('So good')
     end
 
     it 'should return an array of errors with invalid params' do
@@ -32,8 +29,8 @@ describe Api::V1::ReviewsController, type: :controller do
 
       data = {
         review: {
-          rating: "",
-          review_text: ""
+          rating: '',
+          review_text: ''
         },
         venue_id: @venue.id
       }

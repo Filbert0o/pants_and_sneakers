@@ -2,7 +2,7 @@ require 'rails_helper'
 require 'json'
 
 describe Api::V1::VenuesController, type: :controller do
-  let!(:first_venue) {create(:venue)}
+  let!(:first_venue) { create(:venue) }
 
   let!(:second_venue) do
     Venue.create(
@@ -50,7 +50,7 @@ describe Api::V1::VenuesController, type: :controller do
 
   describe 'GET#show' do
     before do
-      get :show, params: {id: first_venue.id}
+      get :show, params: { id: first_venue.id }
       @body = JSON.parse(response.body)
     end
 
@@ -62,7 +62,6 @@ describe Api::V1::VenuesController, type: :controller do
       expect(@body['city']).to eq 'Philadelphia'
       expect(@body['state']).to eq 'PA'
       expect(@body['zip']).to eq '19123'
-
     end
 
     it 'should return an array of reviews in a key :reviews' do
@@ -76,20 +75,19 @@ describe Api::V1::VenuesController, type: :controller do
       @user = create(:user)
       sign_in @user
 
-      data = {venue: {
-        name: "Test Venue",
-        address: "123 Main St.",
-        city: "Philadelphia",
-        state: "PA",
-        zip: "19107"
-      }}
+      data = {
+        venue: {
+          name: 'Test Venue',
+          address: '123 Main St.',
+          city: 'Philadelphia',
+          state: 'PA',
+          zip: '19107'
+        }
+      }
 
-      expect{
-        post :create, params: data
-      }.to change(Venue, :count).by(1)
+      expect { post :create, params: data }.to change(Venue, :count).by(1)
 
-      expect(Venue.last.name).to eq("Test Venue")
-
+      expect(Venue.last.name).to eq('Test Venue')
     end
 
     it 'should return an array of errors in json with invalid params' do
@@ -98,13 +96,13 @@ describe Api::V1::VenuesController, type: :controller do
 
       data = {
         venue: {
-          name: "",
-          address: "",
-          city: "",
-          state: "",
-          zip: ""
-          }
+          name: '',
+          address: '',
+          city: '',
+          state: '',
+          zip: ''
         }
+      }
 
       post :create, params: data
       body = JSON.parse(response.body)
