@@ -27,14 +27,8 @@ class VenueShowContainer extends Component {
     .then(response => response.json())
     .then(body => {
       this.setState({
-<<<<<<< HEAD
-        venue: body
-||||||| merged common ancestors
-       venue: body
-=======
        venue: body,
        reviews: body.reviews
->>>>>>> 9537c0391783382ce27e53b6282fc08e0f576582
       })
     })
     .catch(error => console.error(`Error in fetch: ${error.message}`));
