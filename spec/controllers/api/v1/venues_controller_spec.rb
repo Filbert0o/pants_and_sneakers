@@ -92,7 +92,7 @@ describe Api::V1::VenuesController, type: :controller do
 
     end
 
-    it 'should return an array of errors in json with invalid params', focus: true do
+    it 'should return an array of errors in json with invalid params' do
       @user = create(:user)
       sign_in @user
 
