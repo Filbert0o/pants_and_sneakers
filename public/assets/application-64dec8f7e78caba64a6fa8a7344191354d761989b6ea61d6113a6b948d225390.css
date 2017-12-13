@@ -1,4 +1,4 @@
-/* line 4, /Users/jasonprestosh/venue-menu/app/assets/stylesheets/NavBar.scss */
+/* line 4, /Users/markdavis/challenges/venue-menu/app/assets/stylesheets/NavBar.scss */
 #billboard {
   background-color: transparent;
   background: url(https://s3.us-east-2.amazonaws.com/venue-menu-default-photos/billboard.png) no-repeat center center;
@@ -6,7 +6,7 @@
   box-shadow: inset 0 0 70px rgba(0, 0, 0, 0.4);
 }
 
-/* line 11, /Users/jasonprestosh/venue-menu/app/assets/stylesheets/NavBar.scss */
+/* line 11, /Users/markdavis/challenges/venue-menu/app/assets/stylesheets/NavBar.scss */
 #billboard h2 {
   color: #fff;
   padding: 100px;
@@ -20,17 +20,17 @@
   margin: 0;
 }
 
-/* line 24, /Users/jasonprestosh/venue-menu/app/assets/stylesheets/NavBar.scss */
+/* line 24, /Users/markdavis/challenges/venue-menu/app/assets/stylesheets/NavBar.scss */
 #nav-bar {
   background: #222;
   height: auto;
 }
 
-/* line 29, /Users/jasonprestosh/venue-menu/app/assets/stylesheets/NavBar.scss */
+/* line 29, /Users/markdavis/challenges/venue-menu/app/assets/stylesheets/NavBar.scss */
 #search-bar {
   display: block;
 }
-/* line 31, /Users/jasonprestosh/venue-menu/app/assets/stylesheets/NavBar.scss */
+/* line 31, /Users/markdavis/challenges/venue-menu/app/assets/stylesheets/NavBar.scss */
 #search-bar input[type="text"] {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.1) !important;
@@ -45,18 +45,18 @@
   color: #fff;
 }
 
-/* line 46, /Users/jasonprestosh/venue-menu/app/assets/stylesheets/NavBar.scss */
+/* line 46, /Users/markdavis/challenges/venue-menu/app/assets/stylesheets/NavBar.scss */
 .nav-button {
   margin-bottom: 0 !important;
   border: none;
   height: 50px;
 }
-/* line 3, /Users/jasonprestosh/venue-menu/app/assets/stylesheets/VenueIndexTile.scss */
+/* line 3, /Users/markdavis/challenges/venue-menu/app/assets/stylesheets/VenueIndexTile.scss */
 .venue-tile {
   box-shadow: inset 0 0 70px rgba(0, 0, 0, 0.4);
 }
 
-/* line 7, /Users/jasonprestosh/venue-menu/app/assets/stylesheets/VenueIndexTile.scss */
+/* line 7, /Users/markdavis/challenges/venue-menu/app/assets/stylesheets/VenueIndexTile.scss */
 .tile-info {
   width: 20%;
   background: rgba(0, 0, 0, 0.6);
@@ -65,7 +65,7 @@
   color: #fff;
   transition: .1s ease-in;
 }
-/* line 15, /Users/jasonprestosh/venue-menu/app/assets/stylesheets/VenueIndexTile.scss */
+/* line 15, /Users/markdavis/challenges/venue-menu/app/assets/stylesheets/VenueIndexTile.scss */
 .tile-info h2 {
   color: #fdb17f;
   font-family: 'Poiret One', cursive;
@@ -73,21 +73,21 @@
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   letter-spacing: 1px;
 }
-/* line 23, /Users/jasonprestosh/venue-menu/app/assets/stylesheets/VenueIndexTile.scss */
+/* line 23, /Users/markdavis/challenges/venue-menu/app/assets/stylesheets/VenueIndexTile.scss */
 .tile-info a {
   text-decoration: none;
 }
-/* line 27, /Users/jasonprestosh/venue-menu/app/assets/stylesheets/VenueIndexTile.scss */
+/* line 27, /Users/markdavis/challenges/venue-menu/app/assets/stylesheets/VenueIndexTile.scss */
 .tile-info li {
   list-style: none;
   margin: 0;
 }
 
-/* line 34, /Users/jasonprestosh/venue-menu/app/assets/stylesheets/VenueIndexTile.scss */
+/* line 34, /Users/markdavis/challenges/venue-menu/app/assets/stylesheets/VenueIndexTile.scss */
 .venue-tile:hover .tile-info {
   background: rgba(0, 0, 0, 0.8);
 }
-/* line 1, /Users/jasonprestosh/venue-menu/app/assets/stylesheets/VenueShowTile.scss */
+/* line 1, /Users/markdavis/challenges/venue-menu/app/assets/stylesheets/VenueShowTile.scss */
 .title-show {
   padding-top: 2rem;
   color: #666666;
@@ -95,7 +95,7 @@
   text-shadow: 2px 2px 10px #000;
 }
 
-/* line 8, /Users/jasonprestosh/venue-menu/app/assets/stylesheets/VenueShowTile.scss */
+/* line 8, /Users/markdavis/challenges/venue-menu/app/assets/stylesheets/VenueShowTile.scss */
 .show-img {
   box-shadow: inset 0 0 70px rgba(0, 0, 0, 0.4);
   background-size: 100%;
@@ -107,23 +107,23 @@
   margin-right: auto;
 }
 
-/* line 19, /Users/jasonprestosh/venue-menu/app/assets/stylesheets/VenueShowTile.scss */
+/* line 19, /Users/markdavis/challenges/venue-menu/app/assets/stylesheets/VenueShowTile.scss */
 .show_color {
   background-color: #27121A;
 }
 
-/* line 23, /Users/jasonprestosh/venue-menu/app/assets/stylesheets/VenueShowTile.scss */
+/* line 23, /Users/markdavis/challenges/venue-menu/app/assets/stylesheets/VenueShowTile.scss */
 .important_info {
   box-shadow: inset 0 0 70px rgba(0, 0, 0, 0.4);
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
-/* line 28, /Users/jasonprestosh/venue-menu/app/assets/stylesheets/VenueShowTile.scss */
+/* line 28, /Users/markdavis/challenges/venue-menu/app/assets/stylesheets/VenueShowTile.scss */
 .important_info h4 {
   text-align: center;
   color: #666666;
 }
-/* line 33, /Users/jasonprestosh/venue-menu/app/assets/stylesheets/VenueShowTile.scss */
+/* line 33, /Users/markdavis/challenges/venue-menu/app/assets/stylesheets/VenueShowTile.scss */
 .important_info p {
   font-family: 'Poiret One', cursive;
   font-size: 19px;
@@ -140,7 +140,7 @@
  */
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 @import url("https://fonts.googleapis.com/css?family=Poiret+One");
-/* line 56, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 56, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 html {
   font-size: 62.5%;
   line-height: 1.15;
@@ -156,7 +156,7 @@ html {
 /**
  * Remove the margin in all browsers (opinionated).
  */
-/* line 85, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 85, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 body {
   margin: 0;
 }
@@ -164,7 +164,7 @@ body {
 /**
  * Add the correct display in IE 9-.
  */
-/* line 93, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 93, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 article,
 aside,
 footer,
@@ -178,7 +178,7 @@ section {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-/* line 107, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 107, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -189,7 +189,7 @@ h1 {
 /**
  * Add the correct display in IE 9-.
  */
-/* line 200, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 200, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 figcaption,
 figure {
   display: block;
@@ -198,7 +198,7 @@ figure {
 /**
  * Add the correct margin in IE 8.
  */
-/* line 209, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 209, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 figure {
   margin: 1em 40px;
 }
@@ -207,7 +207,7 @@ figure {
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
-/* line 223, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 223, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 hr {
   box-sizing: content-box;
   /* 1 */
@@ -220,7 +220,7 @@ hr {
 /**
  * Add the correct display in IE.
  */
-/* line 233, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 233, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 main {
   display: block;
 }
@@ -229,7 +229,7 @@ main {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
-/* line 253, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 253, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 pre {
   font-family: monospace, monospace;
   /* 1 */
@@ -243,7 +243,7 @@ pre {
  * 1. Remove the gray background on active links in IE 10.
  * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
  */
-/* line 268, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 268, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 a {
   background-color: transparent;
   /* 1 */
@@ -257,7 +257,7 @@ a {
  * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
-/* line 283, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 283, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 abbr[title] {
   border-bottom: none;
   /* 1 */
@@ -270,7 +270,7 @@ abbr[title] {
 /**
  * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
  */
-/* line 293, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 293, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 b,
 strong {
   font-weight: inherit;
@@ -279,7 +279,7 @@ strong {
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
-/* line 302, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 302, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 b,
 strong {
   font-weight: bolder;
@@ -289,7 +289,7 @@ strong {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
-/* line 312, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 312, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 code,
 kbd,
 samp {
@@ -302,7 +302,7 @@ samp {
 /**
  * Add the correct font style in Android 4.3-.
  */
-/* line 323, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 323, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 dfn {
   font-style: italic;
 }
@@ -310,7 +310,7 @@ dfn {
 /**
  * Add the correct background and color in IE 9-.
  */
-/* line 331, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 331, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 mark {
   background-color: #ff0;
   color: #000;
@@ -319,7 +319,7 @@ mark {
 /**
  * Add the correct font size in all browsers.
  */
-/* line 340, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 340, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 small {
   font-size: 80%;
 }
@@ -328,7 +328,7 @@ small {
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
-/* line 349, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 349, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 sub,
 sup {
   font-size: 75%;
@@ -337,12 +337,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 357, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 357, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 sub {
   bottom: -0.25em;
 }
 
-/* line 361, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 361, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 sup {
   top: -0.5em;
 }
@@ -352,7 +352,7 @@ sup {
 /**
  * Add the correct display in IE 9-.
  */
-/* line 374, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 374, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 audio,
 video {
   display: inline-block;
@@ -361,7 +361,7 @@ video {
 /**
  * Add the correct display in iOS 4-7.
  */
-/* line 383, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 383, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -370,7 +370,7 @@ audio:not([controls]) {
 /**
  * Remove the border on images inside links in IE 10-.
  */
-/* line 392, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 392, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 img {
   border-style: none;
 }
@@ -378,7 +378,7 @@ img {
 /**
  * Hide the overflow in IE.
  */
-/* line 400, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 400, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -389,7 +389,7 @@ svg:not(:root) {
  * 1. Change the font styles in all browsers (opinionated).
  * 2. Remove the margin in Firefox and Safari.
  */
-/* line 414, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 414, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 button,
 input,
 optgroup,
@@ -408,7 +408,7 @@ textarea {
 /**
  * Show the overflow in IE.
  */
-/* line 434, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 434, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 button {
   overflow: visible;
 }
@@ -417,7 +417,7 @@ button {
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
  */
-/* line 443, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 443, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 button,
 select {
   /* 1 */
@@ -429,7 +429,7 @@ select {
  *    controls in Android 4.
  * 2. Correct the inability to style clickable types in iOS and Safari.
  */
-/* line 454, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 454, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 button,
 html [type="button"],
 [type="reset"],
@@ -438,7 +438,7 @@ html [type="button"],
   /* 2 */
 }
 
-/* line 461, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 461, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 button,
 [type="button"],
 [type="reset"],
@@ -450,7 +450,7 @@ button,
    * Restore the focus styles unset by the previous rule.
    */
 }
-/* line 470, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 470, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -458,7 +458,7 @@ button::-moz-focus-inner,
   border-style: none;
   padding: 0;
 }
-/* line 479, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 479, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
@@ -469,7 +469,7 @@ button:-moz-focusring,
 /**
  * Show the overflow in Edge.
  */
-/* line 488, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 488, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 input {
   overflow: visible;
 }
@@ -478,7 +478,7 @@ input {
  * 1. Add the correct box sizing in IE 10-.
  * 2. Remove the padding in IE 10-.
  */
-/* line 497, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 497, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 [type="checkbox"],
 [type="radio"] {
   box-sizing: border-box;
@@ -490,7 +490,7 @@ input {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-/* line 507, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 507, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
@@ -500,7 +500,7 @@ input {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-/* line 517, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 517, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 [type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -510,7 +510,7 @@ input {
    * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
    */
 }
-/* line 525, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 525, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 [type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
@@ -519,7 +519,7 @@ input {
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
-/* line 536, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 536, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   /* 1 */
@@ -530,7 +530,7 @@ input {
 /**
  * Correct the padding in Firefox.
  */
-/* line 545, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 545, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
@@ -541,7 +541,7 @@ fieldset {
  * 3. Remove the padding so developers are not caught out when they zero out
  *    `fieldset` elements in all browsers.
  */
-/* line 556, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 556, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 legend {
   box-sizing: border-box;
   /* 1 */
@@ -561,7 +561,7 @@ legend {
  * 1. Add the correct display in IE 9-.
  * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
-/* line 570, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 570, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 progress {
   display: inline-block;
   /* 1 */
@@ -572,7 +572,7 @@ progress {
 /**
  * Remove the default vertical scrollbar in IE.
  */
-/* line 579, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 579, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 textarea {
   overflow: auto;
 }
@@ -582,7 +582,7 @@ textarea {
 /*
  * Add the correct display in Edge, IE, and Firefox.
  */
-/* line 592, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 592, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 details {
   display: block;
 }
@@ -590,7 +590,7 @@ details {
 /*
  * Add the correct display in all browsers.
  */
-/* line 600, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 600, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 summary {
   display: list-item;
 }
@@ -598,7 +598,7 @@ summary {
 /*
  * Add the correct display in IE 9-.
  */
-/* line 608, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 608, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 menu {
   display: block;
 }
@@ -608,7 +608,7 @@ menu {
 /**
  * Add the correct display in IE 9-.
  */
-/* line 641, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 641, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 canvas {
   display: inline-block;
 }
@@ -616,7 +616,7 @@ canvas {
 /**
  * Add the correct display in IE.
  */
-/* line 649, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 649, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 template {
   display: none;
 }
@@ -626,19 +626,19 @@ template {
 /**
  * Add the correct display in IE 10-.
  */
-/* line 662, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 662, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 [hidden] {
   display: none;
 }
 
 /* BASIC STYLES
  * ------------------------------------------------ */
-/* line 8, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_base.scss */
+/* line 8, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_base.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 18, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_base.scss */
+/* line 18, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_base.scss */
 body {
   background: #fff;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -653,13 +653,13 @@ body {
 
 /* SPACING
  * ------------------------------------------------ */
-/* line 33, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_base.scss */
+/* line 33, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_base.scss */
 button,
 .button {
   margin-bottom: 1rem;
 }
 
-/* line 35, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_base.scss */
+/* line 35, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_base.scss */
 input,
 textarea,
 select,
@@ -667,7 +667,7 @@ fieldset {
   margin-bottom: 1.5rem;
 }
 
-/* line 39, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_base.scss */
+/* line 39, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_base.scss */
 pre,
 blockquote,
 dl,
@@ -682,7 +682,7 @@ form {
 
 /* TYPOGRAPHY
  * ------------------------------------------------ */
-/* line 3, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
+/* line 3, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #222;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -691,42 +691,42 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 2rem;
 }
 
-/* line 12, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
+/* line 12, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
 h1 {
   font-size: 4rem;
   line-height: 1.2;
   letter-spacing: -0.1rem;
 }
 
-/* line 17, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
+/* line 17, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
 h2 {
   font-size: 3.6rem;
   line-height: 1.25;
   letter-spacing: -0.1rem;
 }
 
-/* line 22, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
+/* line 22, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
 h3 {
   font-size: 3rem;
   line-height: 1.3;
   letter-spacing: -0.1rem;
 }
 
-/* line 27, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
+/* line 27, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
 h4 {
   font-size: 2.4rem;
   line-height: 1.35;
   letter-spacing: -0.08rem;
 }
 
-/* line 32, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
+/* line 32, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
 h5 {
   font-size: 1.8rem;
   line-height: 1.5;
   letter-spacing: -0.05rem;
 }
 
-/* line 37, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
+/* line 37, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
 h6 {
   font-size: 1.5rem;
   line-height: 1.6;
@@ -735,44 +735,44 @@ h6 {
 
 /* Larger than phablet */
 @media (min-width: 550px) {
-  /* line 45, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
+  /* line 45, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
   h1 {
     font-size: 5rem;
   }
 
-  /* line 46, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
+  /* line 46, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
   h2 {
     font-size: 4.2rem;
   }
 
-  /* line 47, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
+  /* line 47, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
   h3 {
     font-size: 3.6rem;
   }
 
-  /* line 48, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
+  /* line 48, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
   h4 {
     font-size: 3rem;
   }
 
-  /* line 49, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
+  /* line 49, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
   h5 {
     font-size: 2.4rem;
   }
 
-  /* line 50, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
+  /* line 50, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
   h6 {
     font-size: 1.5rem;
   }
 }
-/* line 53, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
+/* line 53, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
 p {
   margin-top: 0;
 }
 
 /* BUTTONS
  * ------------------------------------------------ */
-/* line 3, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_buttons.scss */
+/* line 3, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_buttons.scss */
 .button,
 button,
 input[type="submit"],
@@ -796,7 +796,7 @@ input[type="button"] {
   cursor: pointer;
   box-sizing: border-box;
 }
-/* line 25, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_buttons.scss */
+/* line 25, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_buttons.scss */
 .button:hover, .button:focus,
 button:hover,
 button:focus,
@@ -811,7 +811,7 @@ input[type="button"]:focus {
   background-color: transparent;
   outline: 0;
 }
-/* line 32, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_buttons.scss */
+/* line 32, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_buttons.scss */
 .button.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,
@@ -821,7 +821,7 @@ input[type="button"].button-primary {
   background-color: #33C3F0;
   border-color: #333;
 }
-/* line 36, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_buttons.scss */
+/* line 36, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_buttons.scss */
 .button.button-primary:hover, .button.button-primary:focus,
 button.button-primary:hover,
 button.button-primary:focus,
@@ -836,13 +836,13 @@ input[type="button"].button-primary:focus {
   border-color: #1EAEDB;
 }
 
-/* line 44, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_buttons.scss */
+/* line 44, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_buttons.scss */
 .button:visited {
   color: #555;
 }
 
 /* Fix for odd Mozilla border & padding issues */
-/* line 49, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_buttons.scss */
+/* line 49, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_buttons.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -851,7 +851,7 @@ input::-moz-focus-inner {
 
 /* CODE
  * ------------------------------------------------ */
-/* line 3, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_misc.scss */
+/* line 3, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_misc.scss */
 code {
   padding: 0.2rem 0.5rem;
   margin: 0 0.2rem;
@@ -862,7 +862,7 @@ code {
   border-radius: 4px;
 }
 
-/* line 12, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_misc.scss */
+/* line 12, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_misc.scss */
 pre > code {
   display: block;
   padding: 1rem 1.5rem;
@@ -871,7 +871,7 @@ pre > code {
 
 /* MISC
  * ------------------------------------------------ */
-/* line 20, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_misc.scss */
+/* line 20, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_misc.scss */
 hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
@@ -881,36 +881,36 @@ hr {
 
 /* LINKS
  * ------------------------------------------------ */
-/* line 3, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_links.scss */
+/* line 3, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_links.scss */
 a, a:visited {
   color: #1EAEDB;
   text-decoration: underline;
 }
 
-/* line 7, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_links.scss */
+/* line 7, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_links.scss */
 a:hover, a:focus, a:active {
   color: #0FA0CE;
 }
 
 /* LISTS
  * ------------------------------------------------ */
-/* line 3, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_lists.scss */
+/* line 3, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_lists.scss */
 ul {
   list-style: circle inside;
 }
 
-/* line 4, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_lists.scss */
+/* line 4, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_lists.scss */
 ol {
   list-style: decimal inside;
 }
 
-/* line 5, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_lists.scss */
+/* line 5, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_lists.scss */
 ol, ul {
   padding-left: 0;
   margin-top: 0;
 }
 
-/* line 9, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_lists.scss */
+/* line 9, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_lists.scss */
 ul ul,
 ul ol,
 ol ol,
@@ -919,14 +919,14 @@ ol ul {
   font-size: 90%;
 }
 
-/* line 16, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_lists.scss */
+/* line 16, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_lists.scss */
 li {
   margin-bottom: 1rem;
 }
 
 /* FORMS
  * ------------------------------------------------ */
-/* line 3, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_forms.scss */
+/* line 3, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_forms.scss */
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -947,7 +947,7 @@ select {
 }
 
 /* Removes awkward default styles on some inputs for iOS */
-/* line 21, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_forms.scss */
+/* line 21, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_forms.scss */
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -961,14 +961,14 @@ textarea {
   appearance: none;
 }
 
-/* line 33, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_forms.scss */
+/* line 33, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_forms.scss */
 textarea {
   min-height: 65px;
   padding-top: 6px;
   padding-bottom: 6px;
 }
 
-/* line 38, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_forms.scss */
+/* line 38, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_forms.scss */
 input[type="email"]:focus,
 input[type="number"]:focus,
 input[type="search"]:focus,
@@ -982,7 +982,7 @@ select:focus {
   outline: 0;
 }
 
-/* line 50, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_forms.scss */
+/* line 50, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_forms.scss */
 label,
 legend {
   display: block;
@@ -990,19 +990,19 @@ legend {
   font-weight: 600;
 }
 
-/* line 56, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_forms.scss */
+/* line 56, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_forms.scss */
 fieldset {
   padding: 0;
   border-width: 0;
 }
 
-/* line 60, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_forms.scss */
+/* line 60, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_forms.scss */
 input[type="checkbox"],
 input[type="radio"] {
   display: inline;
 }
 
-/* line 62, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_forms.scss */
+/* line 62, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_forms.scss */
 label > .label-body {
   display: inline-block;
   margin-left: 0.5rem;
@@ -1011,19 +1011,19 @@ label > .label-body {
 
 /* TABLES
  * ------------------------------------------------ */
-/* line 3, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_tables.scss */
+/* line 3, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_tables.scss */
 th,
 td {
   padding: 12px 15px;
   text-align: left;
   border-bottom: 1px solid #E1E1E1;
 }
-/* line 8, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_tables.scss */
+/* line 8, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_tables.scss */
 th:first-child,
 td:first-child {
   padding-left: 0;
 }
-/* line 9, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_tables.scss */
+/* line 9, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_tables.scss */
 th:last-child,
 td:last-child {
   padding-right: 0;
@@ -1031,31 +1031,31 @@ td:last-child {
 
 /* UTILITIES
  * ------------------------------------------------ */
-/* line 3, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_utils.scss */
+/* line 3, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_utils.scss */
 .u-full-width {
   width: 100%;
   box-sizing: border-box;
 }
 
-/* line 7, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_utils.scss */
+/* line 7, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_utils.scss */
 .u-max-full-width {
   max-width: 100%;
   box-sizing: border-box;
 }
 
-/* line 11, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_utils.scss */
+/* line 11, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_utils.scss */
 .u-pull-right {
   float: right;
 }
 
-/* line 12, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_utils.scss */
+/* line 12, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_utils.scss */
 .u-pull-left {
   float: left;
 }
 
 /* IMAGES
  * ------------------------------------------------ */
-/* line 16, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_utils.scss */
+/* line 16, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_utils.scss */
 img.scale-with-grid {
   max-width: 100%;
   height: auto;
@@ -1063,7 +1063,7 @@ img.scale-with-grid {
 
 /* BASE GRID
  * ------------------------------------------------ */
-/* line 3, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
+/* line 3, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
 .container {
   position: relative;
   width: 100%;
@@ -1073,7 +1073,7 @@ img.scale-with-grid {
   box-sizing: border-box;
 }
 
-/* line 11, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
+/* line 11, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
 .column,
 .columns {
   width: 100%;
@@ -1081,14 +1081,14 @@ img.scale-with-grid {
   box-sizing: border-box;
 }
 
-/* line 17, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
+/* line 17, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
 .row {
   margin-bottom: 2rem;
 }
 
 /* For devices larger than 400px */
 @media (min-width: 400px) {
-  /* line 21, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
+  /* line 21, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
   .container {
     width: 85%;
     padding: 0;
@@ -1097,103 +1097,103 @@ img.scale-with-grid {
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   /* Overrides */
-  /* line 20, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 20, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .container {
     width: 80%;
   }
 
-  /* line 32, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 32, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .column,
   .columns {
     margin-left: 4%;
   }
-  /* line 35, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 35, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .column:first-child:not([class^="offset"]),
   .columns:first-child:not([class^="offset"]) {
     margin-left: 0;
   }
 
-  /* line 43, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 43, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .one.column,
   .one.columns {
     width: 4.6666666667%;
   }
 
-  /* line 52, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 52, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .two.columns {
     width: 13.3333333333%;
   }
 
-  /* line 52, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 52, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .three.columns {
     width: 22%;
   }
 
-  /* line 52, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 52, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .four.columns {
     width: 30.6666666667%;
   }
 
-  /* line 52, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 52, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .five.columns {
     width: 39.3333333333%;
   }
 
-  /* line 52, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 52, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .six.columns {
     width: 48%;
   }
 
-  /* line 52, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 52, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .seven.columns {
     width: 56.6666666667%;
   }
 
-  /* line 52, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 52, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .eight.columns {
     width: 65.3333333333%;
   }
 
-  /* line 52, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 52, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .nine.columns {
     width: 74%;
   }
 
-  /* line 52, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 52, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .ten.columns {
     width: 82.6666666667%;
   }
 
-  /* line 52, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 52, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .eleven.columns {
     width: 91.3333333333%;
   }
 
-  /* line 47, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 47, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .twelve.columns {
     width: 100%;
     margin-left: 0;
   }
 
-  /* line 57, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 57, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .one-third.column,
   .one-third.columns {
     width: 30.6666666667%;
   }
 
-  /* line 59, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 59, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .two-thirds.column,
   .two-thirds.columns {
     width: 63.3333333333%;
   }
 
-  /* line 61, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 61, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .one-half.column,
   .one-half.columns {
     width: 48%;
   }
 
-  /* line 63, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 63, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .full-width.column,
   .full-width.columns {
     width: 100%;
@@ -1201,74 +1201,74 @@ img.scale-with-grid {
     margin-right: 0;
   }
 
-  /* line 124, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 124, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .offset-by-one {
     margin-left: 8.6666666667%;
   }
 
-  /* line 124, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 124, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .offset-by-two {
     margin-left: 17.3333333333%;
   }
 
-  /* line 124, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 124, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .offset-by-three {
     margin-left: 26%;
   }
 
-  /* line 124, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 124, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .offset-by-four {
     margin-left: 34.6666666667%;
   }
 
-  /* line 124, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 124, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .offset-by-five {
     margin-left: 43.3333333333%;
   }
 
-  /* line 124, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 124, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .offset-by-six {
     margin-left: 52%;
   }
 
-  /* line 124, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 124, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .offset-by-seven {
     margin-left: 60.6666666667%;
   }
 
-  /* line 124, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 124, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .offset-by-eight {
     margin-left: 69.3333333333%;
   }
 
-  /* line 124, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 124, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .offset-by-nine {
     margin-left: 78%;
   }
 
-  /* line 124, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 124, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .offset-by-ten {
     margin-left: 86.6666666667%;
   }
 
-  /* line 124, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 124, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .offset-by-eleven {
     margin-left: 95.3333333333%;
   }
 
-  /* line 127, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 127, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .offset-by-one-third.column,
   .offset-by-one-third.columns {
     margin-left: 34.6666666667%;
   }
 
-  /* line 129, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 129, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .offset-by-two-thirds.column,
   .offset-by-two-thirds.columns {
     margin-left: 69.3333333333%;
   }
 
-  /* line 131, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 131, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .offset-by-one-half.column,
   .offset-by-one-half.columns {
     margin-left: 52%;
@@ -1277,24 +1277,24 @@ img.scale-with-grid {
 /* TABLET (PORTRAIT)
  * ------------------------------------------------ */
 @media only screen and (min-width: 768px) and (max-width: 99%) {
-  /* line 37, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
+  /* line 37, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
   .container {
     width: 768px;
   }
-  /* line 41, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
+  /* line 41, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
   .container .column.alpha,
   .container .columns.alpha {
     margin-left: 0;
     margin-right: 2%;
   }
-  /* line 47, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
+  /* line 47, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
   .container .column.omega,
   .container .columns.omega {
     margin-right: 0;
     margin-left: 2%;
   }
 
-  /* line 55, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
+  /* line 55, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
   .alpha.omega {
     margin-left: 0;
     margin-right: 0;
@@ -1303,40 +1303,40 @@ img.scale-with-grid {
 /*  MOBILE (PORTRAIT)
  * ------------------------------------------------ */
 @media only screen and (max-width: 767px) {
-  /* line 143, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 143, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .container {
     width: 100%;
   }
-  /* line 145, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 145, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .container .column,
   .container .columns {
     max-width: 100%;
     margin-left: 2%;
     margin-right: 2%;
   }
-  /* line 155, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 155, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .container .one.column {
     width: 96%;
   }
-  /* line 196, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 196, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .container .one.columns, .container .two.columns, .container .three.columns, .container .four.columns, .container .five.columns, .container .six.columns, .container .seven.columns, .container .eight.columns, .container .nine.columns, .container .ten.columns, .container .eleven.columns, .container .twelve.columns {
     width: 96%;
   }
-  /* line 159, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 159, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .container .one-third.column {
     width: 96%;
   }
-  /* line 160, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 160, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .container .two-thirds.column {
     width: 96%;
   }
-  /* line 161, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 161, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .container .full-width.columns {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
   }
-  /* line 196, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 196, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .container .offset-by-one, .container .offset-by-two, .container .offset-by-three, .container .offset-by-four, .container .offset-by-five, .container .offset-by-six, .container .offset-by-seven, .container .offset-by-eight, .container .offset-by-nine, .container .offset-by-ten, .container .offset-by-eleven {
     padding-left: 0;
   }
@@ -1344,47 +1344,47 @@ img.scale-with-grid {
 /* MOBILE (LANDSCAPE)
  * ------------------------------------------------ */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 143, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 143, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .container {
     width: 100%;
   }
-  /* line 145, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 145, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .container .column,
   .container .columns {
     max-width: 100%;
     margin-left: 2%;
     margin-right: 2%;
   }
-  /* line 155, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 155, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .container .one.column {
     width: 96%;
   }
-  /* line 196, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 196, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .container .one.columns, .container .two.columns, .container .three.columns, .container .four.columns, .container .five.columns, .container .six.columns, .container .seven.columns, .container .eight.columns, .container .nine.columns, .container .ten.columns, .container .eleven.columns, .container .twelve.columns {
     width: 96%;
   }
-  /* line 159, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 159, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .container .one-third.column {
     width: 96%;
   }
-  /* line 160, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 160, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .container .two-thirds.column {
     width: 96%;
   }
-  /* line 161, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 161, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .container .full-width.columns {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
   }
-  /* line 196, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 196, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .container .offset-by-one, .container .offset-by-two, .container .offset-by-three, .container .offset-by-four, .container .offset-by-five, .container .offset-by-six, .container .offset-by-seven, .container .offset-by-eight, .container .offset-by-nine, .container .offset-by-ten, .container .offset-by-eleven {
     padding-left: 0;
   }
 }
 /* CLEARING
  * ------------------------------------------------ */
-/* line 83, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
+/* line 83, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
 .container:after {
   content: "\0020";
   display: block;
@@ -1393,11 +1393,11 @@ img.scale-with-grid {
   visibility: hidden;
 }
 
-/* line 90, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
+/* line 90, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
 .clearfix, .row {
   zoom: 1;
 }
-/* line 92, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
+/* line 92, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
 .clearfix:before, .clearfix:after, .row:before, .row:after {
   content: "\0020";
   display: block;
@@ -1406,12 +1406,12 @@ img.scale-with-grid {
   width: 0;
   height: 0;
 }
-/* line 100, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
+/* line 100, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
 .clearfix:after, .row:after {
   clear: both;
 }
 
-/* line 102, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
+/* line 102, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
 .clear {
   clear: both;
   display: block;
@@ -1421,7 +1421,7 @@ img.scale-with-grid {
   height: 0;
 }
 
-/* line 7, /Users/jasonprestosh/venue-menu/app/assets/stylesheets/skeleton.scss */
+/* line 7, /Users/markdavis/challenges/venue-menu/app/assets/stylesheets/skeleton.scss */
 .flash {
   position: absolute;
 }
@@ -1433,7 +1433,7 @@ img.scale-with-grid {
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
-/* line 56, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 56, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 html {
   font-size: 62.5%;
   line-height: 1.15;
@@ -1449,7 +1449,7 @@ html {
 /**
  * Remove the margin in all browsers (opinionated).
  */
-/* line 85, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 85, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 body {
   margin: 0;
 }
@@ -1457,7 +1457,7 @@ body {
 /**
  * Add the correct display in IE 9-.
  */
-/* line 93, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 93, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 article,
 aside,
 footer,
@@ -1471,7 +1471,7 @@ section {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-/* line 107, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 107, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -1482,7 +1482,7 @@ h1 {
 /**
  * Add the correct display in IE 9-.
  */
-/* line 200, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 200, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 figcaption,
 figure {
   display: block;
@@ -1491,7 +1491,7 @@ figure {
 /**
  * Add the correct margin in IE 8.
  */
-/* line 209, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 209, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 figure {
   margin: 1em 40px;
 }
@@ -1500,7 +1500,7 @@ figure {
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
-/* line 223, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 223, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 hr {
   box-sizing: content-box;
   /* 1 */
@@ -1513,7 +1513,7 @@ hr {
 /**
  * Add the correct display in IE.
  */
-/* line 233, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 233, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 main {
   display: block;
 }
@@ -1522,7 +1522,7 @@ main {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
-/* line 253, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 253, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 pre {
   font-family: monospace, monospace;
   /* 1 */
@@ -1536,7 +1536,7 @@ pre {
  * 1. Remove the gray background on active links in IE 10.
  * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
  */
-/* line 268, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 268, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 a {
   background-color: transparent;
   /* 1 */
@@ -1550,7 +1550,7 @@ a {
  * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
-/* line 283, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 283, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 abbr[title] {
   border-bottom: none;
   /* 1 */
@@ -1563,7 +1563,7 @@ abbr[title] {
 /**
  * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
  */
-/* line 293, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 293, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 b,
 strong {
   font-weight: inherit;
@@ -1572,7 +1572,7 @@ strong {
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
-/* line 302, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 302, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 b,
 strong {
   font-weight: bolder;
@@ -1582,7 +1582,7 @@ strong {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
-/* line 312, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 312, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 code,
 kbd,
 samp {
@@ -1595,7 +1595,7 @@ samp {
 /**
  * Add the correct font style in Android 4.3-.
  */
-/* line 323, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 323, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 dfn {
   font-style: italic;
 }
@@ -1603,7 +1603,7 @@ dfn {
 /**
  * Add the correct background and color in IE 9-.
  */
-/* line 331, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 331, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 mark {
   background-color: #ff0;
   color: #000;
@@ -1612,7 +1612,7 @@ mark {
 /**
  * Add the correct font size in all browsers.
  */
-/* line 340, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 340, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 small {
   font-size: 80%;
 }
@@ -1621,7 +1621,7 @@ small {
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
-/* line 349, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 349, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 sub,
 sup {
   font-size: 75%;
@@ -1630,12 +1630,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 357, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 357, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 sub {
   bottom: -0.25em;
 }
 
-/* line 361, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 361, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 sup {
   top: -0.5em;
 }
@@ -1645,7 +1645,7 @@ sup {
 /**
  * Add the correct display in IE 9-.
  */
-/* line 374, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 374, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 audio,
 video {
   display: inline-block;
@@ -1654,7 +1654,7 @@ video {
 /**
  * Add the correct display in iOS 4-7.
  */
-/* line 383, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 383, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -1663,7 +1663,7 @@ audio:not([controls]) {
 /**
  * Remove the border on images inside links in IE 10-.
  */
-/* line 392, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 392, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 img {
   border-style: none;
 }
@@ -1671,7 +1671,7 @@ img {
 /**
  * Hide the overflow in IE.
  */
-/* line 400, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 400, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -1682,7 +1682,7 @@ svg:not(:root) {
  * 1. Change the font styles in all browsers (opinionated).
  * 2. Remove the margin in Firefox and Safari.
  */
-/* line 414, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 414, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 button,
 input,
 optgroup,
@@ -1701,7 +1701,7 @@ textarea {
 /**
  * Show the overflow in IE.
  */
-/* line 434, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 434, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 button {
   overflow: visible;
 }
@@ -1710,7 +1710,7 @@ button {
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
  */
-/* line 443, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 443, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 button,
 select {
   /* 1 */
@@ -1722,7 +1722,7 @@ select {
  *    controls in Android 4.
  * 2. Correct the inability to style clickable types in iOS and Safari.
  */
-/* line 454, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 454, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 button,
 html [type="button"],
 [type="reset"],
@@ -1731,7 +1731,7 @@ html [type="button"],
   /* 2 */
 }
 
-/* line 461, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 461, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 button,
 [type="button"],
 [type="reset"],
@@ -1743,7 +1743,7 @@ button,
    * Restore the focus styles unset by the previous rule.
    */
 }
-/* line 470, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 470, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -1751,7 +1751,7 @@ button::-moz-focus-inner,
   border-style: none;
   padding: 0;
 }
-/* line 479, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 479, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
@@ -1762,7 +1762,7 @@ button:-moz-focusring,
 /**
  * Show the overflow in Edge.
  */
-/* line 488, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 488, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 input {
   overflow: visible;
 }
@@ -1771,7 +1771,7 @@ input {
  * 1. Add the correct box sizing in IE 10-.
  * 2. Remove the padding in IE 10-.
  */
-/* line 497, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 497, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 [type="checkbox"],
 [type="radio"] {
   box-sizing: border-box;
@@ -1783,7 +1783,7 @@ input {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-/* line 507, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 507, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
@@ -1793,7 +1793,7 @@ input {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-/* line 517, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 517, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 [type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -1803,7 +1803,7 @@ input {
    * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
    */
 }
-/* line 525, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 525, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 [type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
@@ -1812,7 +1812,7 @@ input {
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
-/* line 536, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 536, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   /* 1 */
@@ -1823,7 +1823,7 @@ input {
 /**
  * Correct the padding in Firefox.
  */
-/* line 545, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 545, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
@@ -1834,7 +1834,7 @@ fieldset {
  * 3. Remove the padding so developers are not caught out when they zero out
  *    `fieldset` elements in all browsers.
  */
-/* line 556, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 556, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 legend {
   box-sizing: border-box;
   /* 1 */
@@ -1854,7 +1854,7 @@ legend {
  * 1. Add the correct display in IE 9-.
  * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
-/* line 570, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 570, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 progress {
   display: inline-block;
   /* 1 */
@@ -1865,7 +1865,7 @@ progress {
 /**
  * Remove the default vertical scrollbar in IE.
  */
-/* line 579, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 579, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 textarea {
   overflow: auto;
 }
@@ -1875,7 +1875,7 @@ textarea {
 /*
  * Add the correct display in Edge, IE, and Firefox.
  */
-/* line 592, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 592, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 details {
   display: block;
 }
@@ -1883,7 +1883,7 @@ details {
 /*
  * Add the correct display in all browsers.
  */
-/* line 600, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 600, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 summary {
   display: list-item;
 }
@@ -1891,7 +1891,7 @@ summary {
 /*
  * Add the correct display in IE 9-.
  */
-/* line 608, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 608, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 menu {
   display: block;
 }
@@ -1901,7 +1901,7 @@ menu {
 /**
  * Add the correct display in IE 9-.
  */
-/* line 641, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 641, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 canvas {
   display: inline-block;
 }
@@ -1909,7 +1909,7 @@ canvas {
 /**
  * Add the correct display in IE.
  */
-/* line 649, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 649, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 template {
   display: none;
 }
@@ -1919,19 +1919,19 @@ template {
 /**
  * Add the correct display in IE 10-.
  */
-/* line 662, /Users/jasonprestosh/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
+/* line 662, /Users/markdavis/challenges/venue-menu/node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss */
 [hidden] {
   display: none;
 }
 
 /* BASIC STYLES
  * ------------------------------------------------ */
-/* line 8, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_base.scss */
+/* line 8, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_base.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 18, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_base.scss */
+/* line 18, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_base.scss */
 body {
   background: #fff;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1946,13 +1946,13 @@ body {
 
 /* SPACING
  * ------------------------------------------------ */
-/* line 33, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_base.scss */
+/* line 33, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_base.scss */
 button,
 .button {
   margin-bottom: 1rem;
 }
 
-/* line 35, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_base.scss */
+/* line 35, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_base.scss */
 input,
 textarea,
 select,
@@ -1960,7 +1960,7 @@ fieldset {
   margin-bottom: 1.5rem;
 }
 
-/* line 39, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_base.scss */
+/* line 39, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_base.scss */
 pre,
 blockquote,
 dl,
@@ -1975,7 +1975,7 @@ form {
 
 /* TYPOGRAPHY
  * ------------------------------------------------ */
-/* line 3, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
+/* line 3, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #222;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1984,42 +1984,42 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 2rem;
 }
 
-/* line 12, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
+/* line 12, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
 h1 {
   font-size: 4rem;
   line-height: 1.2;
   letter-spacing: -0.1rem;
 }
 
-/* line 17, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
+/* line 17, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
 h2 {
   font-size: 3.6rem;
   line-height: 1.25;
   letter-spacing: -0.1rem;
 }
 
-/* line 22, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
+/* line 22, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
 h3 {
   font-size: 3rem;
   line-height: 1.3;
   letter-spacing: -0.1rem;
 }
 
-/* line 27, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
+/* line 27, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
 h4 {
   font-size: 2.4rem;
   line-height: 1.35;
   letter-spacing: -0.08rem;
 }
 
-/* line 32, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
+/* line 32, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
 h5 {
   font-size: 1.8rem;
   line-height: 1.5;
   letter-spacing: -0.05rem;
 }
 
-/* line 37, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
+/* line 37, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
 h6 {
   font-size: 1.5rem;
   line-height: 1.6;
@@ -2028,44 +2028,44 @@ h6 {
 
 /* Larger than phablet */
 @media (min-width: 550px) {
-  /* line 45, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
+  /* line 45, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
   h1 {
     font-size: 5rem;
   }
 
-  /* line 46, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
+  /* line 46, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
   h2 {
     font-size: 4.2rem;
   }
 
-  /* line 47, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
+  /* line 47, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
   h3 {
     font-size: 3.6rem;
   }
 
-  /* line 48, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
+  /* line 48, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
   h4 {
     font-size: 3rem;
   }
 
-  /* line 49, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
+  /* line 49, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
   h5 {
     font-size: 2.4rem;
   }
 
-  /* line 50, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
+  /* line 50, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
   h6 {
     font-size: 1.5rem;
   }
 }
-/* line 53, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
+/* line 53, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_typography.scss */
 p {
   margin-top: 0;
 }
 
 /* BUTTONS
  * ------------------------------------------------ */
-/* line 3, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_buttons.scss */
+/* line 3, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_buttons.scss */
 .button,
 button,
 input[type="submit"],
@@ -2089,7 +2089,7 @@ input[type="button"] {
   cursor: pointer;
   box-sizing: border-box;
 }
-/* line 25, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_buttons.scss */
+/* line 25, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_buttons.scss */
 .button:hover, .button:focus,
 button:hover,
 button:focus,
@@ -2104,7 +2104,7 @@ input[type="button"]:focus {
   background-color: transparent;
   outline: 0;
 }
-/* line 32, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_buttons.scss */
+/* line 32, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_buttons.scss */
 .button.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,
@@ -2114,7 +2114,7 @@ input[type="button"].button-primary {
   background-color: #33C3F0;
   border-color: #333;
 }
-/* line 36, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_buttons.scss */
+/* line 36, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_buttons.scss */
 .button.button-primary:hover, .button.button-primary:focus,
 button.button-primary:hover,
 button.button-primary:focus,
@@ -2129,13 +2129,13 @@ input[type="button"].button-primary:focus {
   border-color: #1EAEDB;
 }
 
-/* line 44, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_buttons.scss */
+/* line 44, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_buttons.scss */
 .button:visited {
   color: #555;
 }
 
 /* Fix for odd Mozilla border & padding issues */
-/* line 49, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_buttons.scss */
+/* line 49, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_buttons.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -2144,7 +2144,7 @@ input::-moz-focus-inner {
 
 /* CODE
  * ------------------------------------------------ */
-/* line 3, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_misc.scss */
+/* line 3, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_misc.scss */
 code {
   padding: 0.2rem 0.5rem;
   margin: 0 0.2rem;
@@ -2155,7 +2155,7 @@ code {
   border-radius: 4px;
 }
 
-/* line 12, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_misc.scss */
+/* line 12, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_misc.scss */
 pre > code {
   display: block;
   padding: 1rem 1.5rem;
@@ -2164,7 +2164,7 @@ pre > code {
 
 /* MISC
  * ------------------------------------------------ */
-/* line 20, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_misc.scss */
+/* line 20, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_misc.scss */
 hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
@@ -2174,36 +2174,36 @@ hr {
 
 /* LINKS
  * ------------------------------------------------ */
-/* line 3, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_links.scss */
+/* line 3, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_links.scss */
 a, a:visited {
   color: #1EAEDB;
   text-decoration: underline;
 }
 
-/* line 7, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_links.scss */
+/* line 7, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_links.scss */
 a:hover, a:focus, a:active {
   color: #0FA0CE;
 }
 
 /* LISTS
  * ------------------------------------------------ */
-/* line 3, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_lists.scss */
+/* line 3, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_lists.scss */
 ul {
   list-style: circle inside;
 }
 
-/* line 4, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_lists.scss */
+/* line 4, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_lists.scss */
 ol {
   list-style: decimal inside;
 }
 
-/* line 5, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_lists.scss */
+/* line 5, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_lists.scss */
 ol, ul {
   padding-left: 0;
   margin-top: 0;
 }
 
-/* line 9, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_lists.scss */
+/* line 9, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_lists.scss */
 ul ul,
 ul ol,
 ol ol,
@@ -2212,14 +2212,14 @@ ol ul {
   font-size: 90%;
 }
 
-/* line 16, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_lists.scss */
+/* line 16, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_lists.scss */
 li {
   margin-bottom: 1rem;
 }
 
 /* FORMS
  * ------------------------------------------------ */
-/* line 3, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_forms.scss */
+/* line 3, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_forms.scss */
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -2240,7 +2240,7 @@ select {
 }
 
 /* Removes awkward default styles on some inputs for iOS */
-/* line 21, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_forms.scss */
+/* line 21, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_forms.scss */
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -2254,14 +2254,14 @@ textarea {
   appearance: none;
 }
 
-/* line 33, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_forms.scss */
+/* line 33, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_forms.scss */
 textarea {
   min-height: 65px;
   padding-top: 6px;
   padding-bottom: 6px;
 }
 
-/* line 38, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_forms.scss */
+/* line 38, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_forms.scss */
 input[type="email"]:focus,
 input[type="number"]:focus,
 input[type="search"]:focus,
@@ -2275,7 +2275,7 @@ select:focus {
   outline: 0;
 }
 
-/* line 50, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_forms.scss */
+/* line 50, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_forms.scss */
 label,
 legend {
   display: block;
@@ -2283,19 +2283,19 @@ legend {
   font-weight: 600;
 }
 
-/* line 56, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_forms.scss */
+/* line 56, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_forms.scss */
 fieldset {
   padding: 0;
   border-width: 0;
 }
 
-/* line 60, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_forms.scss */
+/* line 60, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_forms.scss */
 input[type="checkbox"],
 input[type="radio"] {
   display: inline;
 }
 
-/* line 62, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_forms.scss */
+/* line 62, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_forms.scss */
 label > .label-body {
   display: inline-block;
   margin-left: 0.5rem;
@@ -2304,19 +2304,19 @@ label > .label-body {
 
 /* TABLES
  * ------------------------------------------------ */
-/* line 3, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_tables.scss */
+/* line 3, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_tables.scss */
 th,
 td {
   padding: 12px 15px;
   text-align: left;
   border-bottom: 1px solid #E1E1E1;
 }
-/* line 8, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_tables.scss */
+/* line 8, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_tables.scss */
 th:first-child,
 td:first-child {
   padding-left: 0;
 }
-/* line 9, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_tables.scss */
+/* line 9, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_tables.scss */
 th:last-child,
 td:last-child {
   padding-right: 0;
@@ -2324,31 +2324,31 @@ td:last-child {
 
 /* UTILITIES
  * ------------------------------------------------ */
-/* line 3, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_utils.scss */
+/* line 3, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_utils.scss */
 .u-full-width {
   width: 100%;
   box-sizing: border-box;
 }
 
-/* line 7, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_utils.scss */
+/* line 7, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_utils.scss */
 .u-max-full-width {
   max-width: 100%;
   box-sizing: border-box;
 }
 
-/* line 11, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_utils.scss */
+/* line 11, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_utils.scss */
 .u-pull-right {
   float: right;
 }
 
-/* line 12, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_utils.scss */
+/* line 12, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_utils.scss */
 .u-pull-left {
   float: left;
 }
 
 /* IMAGES
  * ------------------------------------------------ */
-/* line 16, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_utils.scss */
+/* line 16, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/components/_utils.scss */
 img.scale-with-grid {
   max-width: 100%;
   height: auto;
@@ -2356,7 +2356,7 @@ img.scale-with-grid {
 
 /* BASE GRID
  * ------------------------------------------------ */
-/* line 3, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
+/* line 3, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
 .container {
   position: relative;
   width: 100%;
@@ -2366,7 +2366,7 @@ img.scale-with-grid {
   box-sizing: border-box;
 }
 
-/* line 11, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
+/* line 11, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
 .column,
 .columns {
   width: 100%;
@@ -2374,14 +2374,14 @@ img.scale-with-grid {
   box-sizing: border-box;
 }
 
-/* line 17, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
+/* line 17, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
 .row {
   margin-bottom: 2rem;
 }
 
 /* For devices larger than 400px */
 @media (min-width: 400px) {
-  /* line 21, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
+  /* line 21, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
   .container {
     width: 85%;
     padding: 0;
@@ -2390,103 +2390,103 @@ img.scale-with-grid {
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   /* Overrides */
-  /* line 20, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 20, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .container {
     width: 80%;
   }
 
-  /* line 32, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 32, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .column,
   .columns {
     margin-left: 4%;
   }
-  /* line 35, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 35, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .column:first-child:not([class^="offset"]),
   .columns:first-child:not([class^="offset"]) {
     margin-left: 0;
   }
 
-  /* line 43, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 43, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .one.column,
   .one.columns {
     width: 4.6666666667%;
   }
 
-  /* line 52, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 52, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .two.columns {
     width: 13.3333333333%;
   }
 
-  /* line 52, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 52, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .three.columns {
     width: 22%;
   }
 
-  /* line 52, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 52, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .four.columns {
     width: 30.6666666667%;
   }
 
-  /* line 52, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 52, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .five.columns {
     width: 39.3333333333%;
   }
 
-  /* line 52, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 52, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .six.columns {
     width: 48%;
   }
 
-  /* line 52, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 52, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .seven.columns {
     width: 56.6666666667%;
   }
 
-  /* line 52, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 52, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .eight.columns {
     width: 65.3333333333%;
   }
 
-  /* line 52, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 52, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .nine.columns {
     width: 74%;
   }
 
-  /* line 52, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 52, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .ten.columns {
     width: 82.6666666667%;
   }
 
-  /* line 52, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 52, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .eleven.columns {
     width: 91.3333333333%;
   }
 
-  /* line 47, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 47, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .twelve.columns {
     width: 100%;
     margin-left: 0;
   }
 
-  /* line 57, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 57, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .one-third.column,
   .one-third.columns {
     width: 30.6666666667%;
   }
 
-  /* line 59, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 59, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .two-thirds.column,
   .two-thirds.columns {
     width: 63.3333333333%;
   }
 
-  /* line 61, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 61, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .one-half.column,
   .one-half.columns {
     width: 48%;
   }
 
-  /* line 63, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 63, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .full-width.column,
   .full-width.columns {
     width: 100%;
@@ -2494,74 +2494,74 @@ img.scale-with-grid {
     margin-right: 0;
   }
 
-  /* line 124, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 124, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .offset-by-one {
     margin-left: 8.6666666667%;
   }
 
-  /* line 124, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 124, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .offset-by-two {
     margin-left: 17.3333333333%;
   }
 
-  /* line 124, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 124, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .offset-by-three {
     margin-left: 26%;
   }
 
-  /* line 124, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 124, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .offset-by-four {
     margin-left: 34.6666666667%;
   }
 
-  /* line 124, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 124, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .offset-by-five {
     margin-left: 43.3333333333%;
   }
 
-  /* line 124, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 124, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .offset-by-six {
     margin-left: 52%;
   }
 
-  /* line 124, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 124, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .offset-by-seven {
     margin-left: 60.6666666667%;
   }
 
-  /* line 124, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 124, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .offset-by-eight {
     margin-left: 69.3333333333%;
   }
 
-  /* line 124, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 124, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .offset-by-nine {
     margin-left: 78%;
   }
 
-  /* line 124, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 124, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .offset-by-ten {
     margin-left: 86.6666666667%;
   }
 
-  /* line 124, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 124, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .offset-by-eleven {
     margin-left: 95.3333333333%;
   }
 
-  /* line 127, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 127, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .offset-by-one-third.column,
   .offset-by-one-third.columns {
     margin-left: 34.6666666667%;
   }
 
-  /* line 129, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 129, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .offset-by-two-thirds.column,
   .offset-by-two-thirds.columns {
     margin-left: 69.3333333333%;
   }
 
-  /* line 131, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 131, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .offset-by-one-half.column,
   .offset-by-one-half.columns {
     margin-left: 52%;
@@ -2570,24 +2570,24 @@ img.scale-with-grid {
 /* TABLET (PORTRAIT)
  * ------------------------------------------------ */
 @media only screen and (min-width: 768px) and (max-width: 99%) {
-  /* line 37, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
+  /* line 37, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
   .container {
     width: 768px;
   }
-  /* line 41, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
+  /* line 41, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
   .container .column.alpha,
   .container .columns.alpha {
     margin-left: 0;
     margin-right: 2%;
   }
-  /* line 47, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
+  /* line 47, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
   .container .column.omega,
   .container .columns.omega {
     margin-right: 0;
     margin-left: 2%;
   }
 
-  /* line 55, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
+  /* line 55, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
   .alpha.omega {
     margin-left: 0;
     margin-right: 0;
@@ -2596,40 +2596,40 @@ img.scale-with-grid {
 /*  MOBILE (PORTRAIT)
  * ------------------------------------------------ */
 @media only screen and (max-width: 767px) {
-  /* line 143, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 143, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .container {
     width: 100%;
   }
-  /* line 145, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 145, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .container .column,
   .container .columns {
     max-width: 100%;
     margin-left: 2%;
     margin-right: 2%;
   }
-  /* line 155, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 155, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .container .one.column {
     width: 96%;
   }
-  /* line 196, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 196, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .container .one.columns, .container .two.columns, .container .three.columns, .container .four.columns, .container .five.columns, .container .six.columns, .container .seven.columns, .container .eight.columns, .container .nine.columns, .container .ten.columns, .container .eleven.columns, .container .twelve.columns {
     width: 96%;
   }
-  /* line 159, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 159, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .container .one-third.column {
     width: 96%;
   }
-  /* line 160, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 160, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .container .two-thirds.column {
     width: 96%;
   }
-  /* line 161, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 161, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .container .full-width.columns {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
   }
-  /* line 196, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 196, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .container .offset-by-one, .container .offset-by-two, .container .offset-by-three, .container .offset-by-four, .container .offset-by-five, .container .offset-by-six, .container .offset-by-seven, .container .offset-by-eight, .container .offset-by-nine, .container .offset-by-ten, .container .offset-by-eleven {
     padding-left: 0;
   }
@@ -2637,47 +2637,47 @@ img.scale-with-grid {
 /* MOBILE (LANDSCAPE)
  * ------------------------------------------------ */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 143, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 143, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .container {
     width: 100%;
   }
-  /* line 145, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 145, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .container .column,
   .container .columns {
     max-width: 100%;
     margin-left: 2%;
     margin-right: 2%;
   }
-  /* line 155, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 155, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .container .one.column {
     width: 96%;
   }
-  /* line 196, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 196, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .container .one.columns, .container .two.columns, .container .three.columns, .container .four.columns, .container .five.columns, .container .six.columns, .container .seven.columns, .container .eight.columns, .container .nine.columns, .container .ten.columns, .container .eleven.columns, .container .twelve.columns {
     width: 96%;
   }
-  /* line 159, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 159, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .container .one-third.column {
     width: 96%;
   }
-  /* line 160, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 160, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .container .two-thirds.column {
     width: 96%;
   }
-  /* line 161, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 161, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .container .full-width.columns {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
   }
-  /* line 196, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
+  /* line 196, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/core/_dependencies.scss */
   .container .offset-by-one, .container .offset-by-two, .container .offset-by-three, .container .offset-by-four, .container .offset-by-five, .container .offset-by-six, .container .offset-by-seven, .container .offset-by-eight, .container .offset-by-nine, .container .offset-by-ten, .container .offset-by-eleven {
     padding-left: 0;
   }
 }
 /* CLEARING
  * ------------------------------------------------ */
-/* line 83, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
+/* line 83, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
 .container:after {
   content: "\0020";
   display: block;
@@ -2686,11 +2686,11 @@ img.scale-with-grid {
   visibility: hidden;
 }
 
-/* line 90, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
+/* line 90, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
 .clearfix, .row {
   zoom: 1;
 }
-/* line 92, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
+/* line 92, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
 .clearfix:before, .clearfix:after, .row:before, .row:after {
   content: "\0020";
   display: block;
@@ -2699,12 +2699,12 @@ img.scale-with-grid {
   width: 0;
   height: 0;
 }
-/* line 100, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
+/* line 100, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
 .clearfix:after, .row:after {
   clear: both;
 }
 
-/* line 102, /Users/jasonprestosh/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
+/* line 102, /Users/markdavis/challenges/venue-menu/node_modules/skeleton-sass-official/skeleton/themes/fresh/_grid.scss */
 .clear {
   clear: both;
   display: block;
@@ -2713,7 +2713,7 @@ img.scale-with-grid {
   width: 0;
   height: 0;
 }
-/* line 1, /Users/jasonprestosh/venue-menu/app/assets/stylesheets/utility-nav.scss */
+/* line 1, /Users/markdavis/challenges/venue-menu/app/assets/stylesheets/utility-nav.scss */
 #utility {
   color: white;
   padding: 0px 30px;

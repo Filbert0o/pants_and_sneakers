@@ -12,9 +12,10 @@ class VenuesIndexContainer extends Component {
       currentUser: null
     }
     this.handleClick = this.handleClick.bind(this)
+    this.getVenues = this.getVenues.bind(this)
   }
 
-  getVenues () {
+  getVenues() {
     fetch('/api/v1/venues', {
       credentials: 'same-origin'
     })
