@@ -42,8 +42,8 @@ describe Api::V1::ReviewsController, type: :controller do
       expect(body['errors'].class).to eq(Array)
 
       expect(body['errors']).to include("Rating can't be blank")
-      expect(body['errors']).to include("Rating is not a number")
-      expect(body['errors']).to include("Rating is not included in the list")
+      expect(body['errors']).to include('Rating is not a number')
+      expect(body['errors']).to include('Rating is not included in the list')
     end
   end
 end
