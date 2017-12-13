@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import VenueShowTile from "../components/VenueShowTile"
+import ReviewTile from "../components/ReviewTile"
 
 class VenueShowContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      venue: {}
+      venue: {},
+      reviews: []
     }
   }
 
@@ -17,7 +19,7 @@ class VenueShowContainer extends Component {
       if (response.ok) {
         return response;
       } else {
-        let errorMessage = `${response.status} (${response.statusText})`,
+        let errorMessage = `${response.status} (${response.statusText})`
         error = new Error(errorMessage);
         throw(error);
       }
@@ -25,7 +27,8 @@ class VenueShowContainer extends Component {
     .then(response => response.json())
     .then(body => {
       this.setState({
-       venue: body
+       venue: body,
+       reviews: body.reviews
       })
     })
     .catch(error => console.error(`Error in fetch: ${error.message}`));
@@ -35,6 +38,22 @@ class VenueShowContainer extends Component {
     this.getVenue()
   }
 
+  mapReviews() {
+    let reviews = this.state.reviews.map(review => {
+      return(
+        <ReviewTile
+          key={review.id}
+          id={review.id}
+          rating={review.rating}
+          review_text={review.review_text}
+          user={review.user}
+          upvotes={review.upvotes}
+          downvotes={review.downvotes}
+        />
+      );
+    })
+    return reviews;
+  }
 
   render() {
     return(
@@ -58,8 +77,11 @@ class VenueShowContainer extends Component {
           cashOnly={this.state.venue.cash_only}
           imageUrl={this.state.venue.image_url}
         />
+        <div>
+          {this.mapReviews()}
+        </div>
       </div>
-    )
+    );
   }
 }
 export default VenueShowContainer;

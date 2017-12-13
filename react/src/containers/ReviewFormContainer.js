@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import { Route, Redirect, browserHistory } from 'react-router';
 import TextField from '../components/TextField';
 import SelectField from '../components/SelectField';
+
 
 class ReviewFormContainer extends Component {
   constructor(props) {
@@ -11,6 +13,7 @@ class ReviewFormContainer extends Component {
       venue_id: this.props.params.venue_id,
       errors: []
     };
+    this.addNewReview = this.addNewReview.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
     this.handleClearForm = this.handleClearForm.bind(this);
@@ -56,7 +59,7 @@ class ReviewFormContainer extends Component {
     })
     .then(response => this.processResponse(response))
     .then(body => {
-      browserHistory.push(`/reviews`);
+      browserHistory.push(`/venues/${this.state.venue_id}`);
     })
     .catch(response => {
       this.setState({
