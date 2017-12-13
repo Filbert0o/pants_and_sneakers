@@ -42,18 +42,8 @@ describe Api::V1::UsersController, type: :controller do
   describe 'DELETE#destroy' do
     it 'should delete a user account' do
       @user = create(:user)
-      @admin = create(:user, email:'different@hotmail.com', role: 'admin')
+      @admin = create(:user, email: 'different@hotmail.com', role: 'admin')
       sign_in @admin
-
-      data = {
-        venue: {
-          name: 'Test Venue',
-          address: '123 Main St.',
-          city: 'Philadelphia',
-          state: 'PA',
-          zip: '19107'
-        }
-      }
 
       expect { delete :destroy, params: { id: @user.id } }.to change(User, :count).by(-1)
 
