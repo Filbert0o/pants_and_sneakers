@@ -7,7 +7,7 @@ describe ApplicationController, type: :controller do
 
     it 'should return false if no user signed in' do
     end
-    
+
     it 'should return false if no user signed in' do
     end
   end
