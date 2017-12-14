@@ -80,7 +80,7 @@ class VenuesIndexContainer extends Component {
 
     let button;
     if (!!this.state.currentUser) {
-      button = <button><Link to={`/venues/new`}>Submit A New Venue</Link></button>
+      button = <Link to={`/venues/new`} className='custom-button' id='add-new-venue-button'>Submit A New Venue</Link>
     }
     // Logic for displaying page numbers
     const pageNumbers = [];
@@ -89,27 +89,37 @@ class VenuesIndexContainer extends Component {
     }
 
     const renderPageNumbers = pageNumbers.map(number => {
+      let buttonclass;
+      if(this.state.currentPage == number) {
+        buttonclass = 'custom-button active'
+      } else {
+        buttonclass = 'custom-button'
+      }
       return (
-        <li
-          className='button'
+        <div
+          className={buttonclass}
           key={number}
           id={number}
           onClick={this.handlePagination}
         >
           {number}
-        </li>
+        </div>
       )
     })
 
     return(
-      <div className='row'>
-        <div id='add-new-venue-button'>
+      <div>
+        <div>
           {button}
         </div>
-        {venues}
-        <ul className='page-numbers'>
-          {renderPageNumbers}
-        </ul>
+        <div>
+          {venues}
+        </div>
+        <div id='pagination'>
+          <div id='page-number-container'>
+            {renderPageNumbers}
+          </div>
+        </div>
       </div>
     )
   }

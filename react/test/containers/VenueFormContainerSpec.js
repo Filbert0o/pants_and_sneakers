@@ -119,7 +119,7 @@ describe('VenueFormContainer', () =>{
   it('should render Submit' , () => {
     expect(wrapper.find('input').at(9)).toBePresent();
     expect(wrapper.find('input').at(9).props()).toEqual({
-      className: 'button',
+      className: 'custom-button',
       type: 'submit',
       value: 'Submit'
     });
