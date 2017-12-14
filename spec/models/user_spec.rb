@@ -26,4 +26,22 @@ RSpec.describe User, type: :model do
     expect(user.errors[:email]).to_not be_blank
     expect(user.errors[:password]).to_not be_blank
   end
+
+  feature "profile photo" do
+  scenario "user uploads a profile photo" do
+    visit root_path
+    click_link "Sign Up"
+
+    fill_in "First Name", with: "jay"
+    fill_in "Last Name", with: "money"
+    fill_in "Email", with: "ash@s-mart.com"
+    fill_in "Password", with: "boomstick!3vilisd3ad"
+    fill_in "Password Confirmation", with: "boomstick!3vilisd3ad"
+    attach_file "Profile Photo", "#{Rails.root}/spec/support/avatar.png"
+    click_button "Sign up"
+
+    expect(page).to have_css("img[src*='avatar.png']")
+    end
+  end
+
 end
