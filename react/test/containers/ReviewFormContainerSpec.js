@@ -43,7 +43,6 @@ describe('ReviewFormContainer', () => {
   });
 
   it('should have a field with label review', () => {
-    console.log(wrapper.find('textarea').nodes[0].name);
     expect(wrapper.find('label').nodes[1].innerHTML).toContain('Review');
     expect(wrapper.find('textarea')).toBePresent();
     expect(wrapper.find('textarea').nodes[0].name).toEqual('review_text');
