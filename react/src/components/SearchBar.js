@@ -2,19 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 import Autosuggest from 'react-autosuggest';
 
-const venues = [
-  {
-    name: "Jason's Bar"
-  },
-  {
-    name: "Jason's Other Bar"
-  },
-  {
-    name: "Jason's Crappy Bar"
-  }
-];
-
-
+const venues = [];
 
 class SearchBar extends Component {
   constructor() {
@@ -103,7 +91,7 @@ class SearchBar extends Component {
       placeholder: 'Search for a venue',
       value,
       onChange: this.onChange
-    };
+    };  
 
     return (
       <div className='suggestions-container'>

@@ -63,6 +63,7 @@ class VenuesIndexContainer extends Component {
         />
       )
     })
+
     let button;
     if (!!this.state.currentUser) {
       button = <button><Link to={`/venues/new`}>Submit A New Venue</Link></button>
@@ -70,7 +71,9 @@ class VenuesIndexContainer extends Component {
 
     return(
       <div className='row'>
-        {button}
+        <div id='add-new-venue-button'>
+          {button}
+        </div>
         {venues}
       </div>
     )
