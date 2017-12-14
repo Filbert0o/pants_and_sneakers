@@ -17,6 +17,48 @@ class VenueShowContainer extends Component {
   }
 
 
+  upVote(reviewId) {
+    let newVote = {
+      value: 1,
+      review_id: reviewId
+    }
+    this.vote(newVote)
+  }
+
+  downVote(reviewId) {
+    let newVote = {
+      value: 2,
+      review_id: reviewId
+    }
+    this.vote(newVote)
+  }
+
+  vote(vote){
+    fetch(`/api/v1/venues/${this.props.params.id}/reviews/${vote.review_id}/votes`, {
+      credentials: 'same-origin',
+      method: "POST",
+      body: JSON.stringify(vote),
+      headers: {'Content-Type': 'application/json'}
+    })
+    .then(response => {
+      if (response.ok) {
+        return response;
+      } else {
+        let errorMessage = `${response.status} (${response.statusText})`,
+        error = new Error(errorMessage);
+        throw(error);
+      }
+    })
+    .then(response => response.json())
+    .then(body => {
+      this.setState({
+        reviews: body.reviews
+      })
+    })
+    .catch(error => console.error(`Error in fetch: ${error.message}`));
+  }
+
+
   updateVote(reviewId){
     let newVote = {
       upvotes: this.state.upvoteNumber,
