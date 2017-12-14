@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Route, Redirect, browserHistory } from 'react-router';
 import TextField from '../components/TextField';
 import SelectField from '../components/SelectField';
+import TextArea from '../components/TextArea';
 
 
 class ReviewFormContainer extends Component {
@@ -80,9 +81,9 @@ class ReviewFormContainer extends Component {
 
   render() {
     return(
-      <div>
+      <div id='review_form'>
         <div id='errors'>{this.state.errors}</div>
-        <form className="new-review-form callout" onSubmit={this.handleFormSubmit}>
+        <form onSubmit={this.handleFormSubmit}>
           <SelectField
             content={this.state.rating}
             label="Rating*"
@@ -90,7 +91,7 @@ class ReviewFormContainer extends Component {
             options={[1, 2, 3, 4, 5]}
             onChange={this.handleChange}
           />
-          <TextField
+          <TextArea
             content={this.state.review_text}
             label="Review"
             name="review_text"
