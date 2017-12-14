@@ -35,3 +35,14 @@
     background: rgba(0,0,0, 0.8);
   }
 }
+
+#add-new-venue-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #27121A;
+}
+
+.button, button {
+  margin-bottom: 0px;
+}
