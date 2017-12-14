@@ -58,11 +58,6 @@ class VenuesIndexContainer extends Component {
 
 
   render() {
-    let button;
-    if (!!this.state.currentUser) {
-      button = <button><Link to={`/venues/new`}>Submit A New Venue</Link></button>
-    }
-
     // Logic for displaying Venues
     const indexOfLastVenue = this.state.currentPage * this.state.venuesPerPage;
     const indexOfFirstVenue = indexOfLastVenue - this.state.venuesPerPage;

@@ -16,11 +16,11 @@ describe('VenueFormContainer', () =>{
     expect(wrapper.find('label').at(3).text()).toBe('State*Choose State*AKALARASAZCACOCTDCDEFLGAGUHIIAIDILINKSKYLAMAMDMEMIMNMOMSMTNCNDNENHNJNMNVNYOHOKORPAPRRISCSDTNTXUTVAVIVTWAWIWVWY');
     expect(wrapper.find('label').at(4).text()).toBe('Zip*');
     expect(wrapper.find('label').at(5).text()).toBe('Venue Website');
-    expect(wrapper.find('label').at(6).text()).toBe('Age RestrictionChoose Age RestrictionAll Ages18+21+');
-    expect(wrapper.find('label').at(7).text()).toBe('Food OptionsChoose Food OptionsNoneLimited MenuFull Menu');
-    expect(wrapper.find('label').at(8).text()).toBe('ParkingChoose ParkingHas Parking LotNo Parking Lot');
-    expect(wrapper.find('label').at(9).text()).toBe('Business Hours');
-    expect(wrapper.find('label').at(10).text()).toBe('Venue Phone');
+    expect(wrapper.find('label').at(6).text()).toBe('Venue Phone');
+    expect(wrapper.find('label').at(7).text()).toBe('Age RestrictionChoose Age RestrictionAll Ages18+21+');
+    expect(wrapper.find('label').at(8).text()).toBe('Food OptionsChoose Food OptionsNoneLimited MenuFull Menu');
+    expect(wrapper.find('label').at(9).text()).toBe('ParkingChoose ParkingHas Parking LotNo Parking Lot');
+    expect(wrapper.find('label').at(10).text()).toBe('Business Hours');
     expect(wrapper.find('label').at(11).text()).toBe('Dress Code');
     expect(wrapper.find('label').at(12).text()).toBe('Cover ChargeChoose Cover ChargeYESNODepends');
     expect(wrapper.find('label').at(13).text()).toBe('Cash OnlyChoose Cash OnlyNOYES');
@@ -70,7 +70,7 @@ describe('VenueFormContainer', () =>{
 
     expect(wrapper.find('input').at(5)).toBePresent();
     expect(wrapper.find('input').at(5).props()).toEqual({
-      name: 'hours',
+      name: 'phone',
       type: 'text',
       value: '',
       onChange: jasmine.any(Function)
@@ -78,7 +78,7 @@ describe('VenueFormContainer', () =>{
 
     expect(wrapper.find('input').at(6)).toBePresent();
     expect(wrapper.find('input').at(6).props()).toEqual({
-      name: 'phone',
+      name: 'hours',
       type: 'text',
       value: '',
       onChange: jasmine.any(Function)
