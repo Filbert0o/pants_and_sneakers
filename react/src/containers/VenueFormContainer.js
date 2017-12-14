@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import TextField from '../components/TextField';
 import SelectField from '../components/SelectField';
-import state from "../Constants"
+import state from '../Constants';
 import { browserHistory } from 'react-router';
 
 class VenueFormContainer extends Component {
@@ -23,10 +23,10 @@ class VenueFormContainer extends Component {
       coverCharge: '',
       cashOnly: '',
       imageUrl: ''
-    }
-    this.handleChange = this.handleChange.bind(this)
-    this.handleClearForm = this.handleClearForm.bind(this)
-    this.handleFormSubmit = this.handleFormSubmit.bind(this)
+    };
+    this.handleChange = this.handleChange.bind(this);
+    this.handleClearForm = this.handleClearForm.bind(this);
+    this.handleFormSubmit = this.handleFormSubmit.bind(this);
   }
 
   handleChange(event) {
@@ -34,7 +34,7 @@ class VenueFormContainer extends Component {
     let newValue = event.target.value;
     this.setState({
       [newKey]: newValue
-    })
+    });
   }
 
   addNewVenue(newVenue) {
@@ -55,13 +55,13 @@ class VenueFormContainer extends Component {
     })
     .then(response => response.json())
     .then(body => {
-      browserHistory.push(`/venues`)
+      browserHistory.push(`/venues`);
     })
     .catch(error => console.error(`Error in fetch: ${error.message}`));
   }
 
   handleFormSubmit(event) {
-    event.preventDefault()
+    event.preventDefault();
     let formPayload = {
       name: this.state.name,
       address: this.state.address,
@@ -78,8 +78,8 @@ class VenueFormContainer extends Component {
       cover_charge: this.state.coverCharge,
       cash_only: this.state.cashOnly,
       image_url: this.state.imageUrl
-    }
-    this.addNewVenue(formPayload)
+    };
+    this.addNewVenue(formPayload);
     this.handleClearForm(event);
   }
 
@@ -101,115 +101,121 @@ class VenueFormContainer extends Component {
       coverCharge: '',
       cashOnly: '',
       imageUrl: ''
-    })
+    });
   }
 
   render() {
     return(
-      <div>
+      <div className='venue-form'>
         <form className="new-venue-form callout" onSubmit={this.handleFormSubmit}>
-          <TextField
-            content={this.state.name}
-            label="Venue Name*"
-            name="name"
-            onChange={this.handleChange}
-          />
-          <TextField
-            content={this.state.address}
-            label="Street Address*"
-            name="address"
-            onChange={this.handleChange}
-          />
-          <TextField
-            content={this.state.city}
-            label="City*"
-            name="city"
-            onChange={this.handleChange}
-          />
-          <SelectField
-            content={this.state.state}
-            label="State*"
-            name="state"
-            options={state}
-            onChange={this.handleChange}
-          />
-          <TextField
-            content={this.state.zip}
-            label="Zip*"
-            name="zip"
-            onChange={this.handleChange}
-          />
-          <TextField
-            content={this.state.website}
-            label="Venue Website"
-            name="website"
-            onChange={this.handleChange}
-          />
-          <SelectField
-            content={this.state.ageRestriction}
-            label="Age Restriction"
-            name="ageRestriction"
-            options={["All Ages", "18+", "21+"]}
-            onChange={this.handleChange}
-          />
-          <SelectField
-            content={this.state.foodOptions}
-            label="Food Options"
-            name="foodOptions"
-            options={["None", "Limited Menu", "Full Menu"]}
-            onChange={this.handleChange}
-          />
-          <SelectField
-            content={this.state.parking}
-            label="Parking"
-            name="parking"
-            options={["Has Parking Lot","No Parking Lot"]}
-            onChange={this.handleChange}
-          />
-          <TextField
-            content={this.state.hours}
-            label="Business Hours"
-            name="hours"
-            onChange={this.handleChange}
-          />
-          <TextField
-            content={this.state.phone}
-            label="Venue Phone"
-            name="phone"
-            onChange={this.handleChange}
-          />
-          <TextField
-            content={this.state.dressCode}
-            label="Dress Code"
-            name="dressCode"
-            onChange={this.handleChange}
-          />
-          <SelectField
-            content={this.state.coverCharge}
-            label="Cover Charge"
-            name="coverCharge"
-            options={["YES", "NO", "Depends"]}
-            onChange={this.handleChange}
-          />
-          <SelectField
-            content={this.state.cashOnly}
-            label="Cash Only"
-            name="cashOnly"
-            options={["NO","YES"]}
-            onChange={this.handleChange}
-          />
-          <TextField
-            content={this.state.imageUrl}
-            label="Venue Cover Photo"
-            name="imageUrl"
-            onChange={this.handleChange}
-          />
-          <div className="button-group">
-            <button className="button" onClick={this.handleClearForm} >Clear</button>
-            <input className="button" type="submit" value="Submit" />
+          <div className='row'>
+            <div className="six columns">
+              <TextField
+                content={this.state.name}
+                label="Venue Name*"
+                name="name"
+                onChange={this.handleChange}
+              />
+              <TextField
+                content={this.state.address}
+                label="Street Address*"
+                name="address"
+                onChange={this.handleChange}
+              />
+              <TextField
+                content={this.state.city}
+                label="City*"
+                name="city"
+                onChange={this.handleChange}
+              />
+              <SelectField
+                content={this.state.state}
+                label="State*"
+                name="state"
+                options={state}
+                onChange={this.handleChange}
+              />
+              <TextField
+                content={this.state.zip}
+                label="Zip*"
+                name="zip"
+                onChange={this.handleChange}
+              />
+              <TextField
+                content={this.state.website}
+                label="Venue Website"
+                name="website"
+                onChange={this.handleChange}
+              />
+              <TextField
+                content={this.state.phone}
+                label="Venue Phone"
+                name="phone"
+                onChange={this.handleChange}
+              />
+            </div>
+            <div className="six columns">
+              <SelectField
+                content={this.state.ageRestriction}
+                label="Age Restriction"
+                name="ageRestriction"
+                options={["All Ages", "18+", "21+"]}
+                onChange={this.handleChange}
+              />
+              <SelectField
+                content={this.state.foodOptions}
+                label="Food Options"
+                name="foodOptions"
+                options={["None", "Limited Menu", "Full Menu"]}
+                onChange={this.handleChange}
+              />
+              <SelectField
+                content={this.state.parking}
+                label="Parking"
+                name="parking"
+                options={["Has Parking Lot","No Parking Lot"]}
+                onChange={this.handleChange}
+              />
+              <TextField
+                content={this.state.hours}
+                label="Business Hours"
+                name="hours"
+                onChange={this.handleChange}
+              />
+              <TextField
+                content={this.state.dressCode}
+                label="Dress Code"
+                name="dressCode"
+                onChange={this.handleChange}
+              />
+              <SelectField
+                content={this.state.coverCharge}
+                label="Cover Charge"
+                name="coverCharge"
+                options={["YES", "NO", "Depends"]}
+                onChange={this.handleChange}
+              />
+              <SelectField
+                content={this.state.cashOnly}
+                label="Cash Only"
+                name="cashOnly"
+                options={["NO","YES"]}
+                onChange={this.handleChange}
+              />
+              <TextField
+                content={this.state.imageUrl}
+                label="Venue Cover Photo"
+                name="imageUrl"
+                onChange={this.handleChange}
+              />
+            </div>
           </div>
-      </form>
-    </div>
+          <div className="button-group row">
+            <span className="custom-button" onClick={this.handleClearForm} >Clear</span>
+            <input className="custom-button" type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
     )
   }
 }

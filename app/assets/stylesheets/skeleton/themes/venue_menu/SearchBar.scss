@@ -1,0 +1,13 @@
+#search-bar {
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-size: 19px;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+}
+
+.suggestions-container {
+  ul {
+    list-style-type: none;
+  }
+}

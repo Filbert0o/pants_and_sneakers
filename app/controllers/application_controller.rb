@@ -7,11 +7,25 @@ class ApplicationController < ActionController::Base
   private
 
   def configure_permitted_parameters
-    devise_parameter_sanitizer.permit(:sign_up, keys: [:first_name, :last_name])
+    devise_parameter_sanitizer.permit(
+      :sign_up,
+      keys: [:first_name, :last_name, :profile_photo]
+    )
+    devise_parameter_sanitizer.permit(
+      :account_update,
+      keys: [:first_name, :last_name, :email, :profile_photo]
+    )
   end
 
   def authorize_user
-    return unless user_signed_in? || current_user.admin?
-    raise ActionController::RoutingError.new('Not Found')
+    unless user_signed_in?
+      raise ActionController::RoutingError.new('Not Found')
+    end
+  end
+
+  def require_admin
+    unless current_user.admin?
+      redirect_to '/404'
+    end
   end
 end

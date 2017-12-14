@@ -9,7 +9,7 @@ const ReviewTile = props => {
     props.downVote(props.id)
   }
   return(
-    <div className='rt'>
+    <div className='review-tile'>
       <h6>Reviewed by: {props.user.first_name} {props.user.last_name}</h6>
       <h6>Rating: {props.rating}/5</h6>
       <h6>Review: {props.review_text}</h6>

@@ -30,8 +30,20 @@
   }
 }
 .venue-tile:hover {
-
   .tile-info {
     background: rgba(0,0,0, 0.8);
   }
+}
+
+#add-new-venue-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 20px;
+  background: rgba(0,0,0, 0.8);
+  box-shadow: 2px 2px 5px #000;
+
+    &:hover {
+      background: $off-white;
+    }
 }

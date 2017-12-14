@@ -6,6 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'active_model_serializers', '~> 0.10.0'
+gem 'carrierwave'
 gem 'rails', '~> 5.1.4'
 gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.7'
@@ -42,4 +43,4 @@ group :test do
 end
 
 # Adding Ruby version per Heroku instructions
-ruby "2.3.3"
+ruby '2.3.3'
