@@ -58,20 +58,6 @@ class VenuesIndexContainer extends Component {
 
 
   render() {
-    // let venues = this.state.venues.map((venue) => {
-    //   return(
-    //     <VenuesIndexTile
-    //       key={venue.id}
-    //       id={venue.id}
-    //       name={venue.name}
-    //       address={venue.address}
-    //       city={venue.city}
-    //       state={venue.state}
-    //       zip={venue.zip}
-    //       imageUrl={venue.image_url}
-    //     />
-    //   )
-    // })
     let button;
     if (!!this.state.currentUser) {
       button = <button><Link to={`/venues/new`}>Submit A New Venue</Link></button>
