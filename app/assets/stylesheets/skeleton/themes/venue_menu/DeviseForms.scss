@@ -1,0 +1,41 @@
+#devise-form {
+  padding: 10px;
+}
+
+.form-container {
+  width: 50%;
+  margin: auto;
+  background-color: $off-white;
+  color: $maroon;
+  padding: 30px;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.8);
+  text-align: center;
+
+  h2 {
+    font-family: 'Poiret One';
+    font-weight: bolder;
+    font-size: 60px;
+  }
+}
+
+.field {
+  display: inline-block;
+  margin: 10px;
+  vertical-align: top;
+}
+
+.field-container {
+  margin: auto;
+  display: inline-block;
+
+  p {
+    margin: 0;
+  }
+}
+
+.remember {
+  label {
+    display: inline-block;
+    margin-right: 5px;
+  }
+}
