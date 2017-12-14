@@ -10,10 +10,11 @@ class VenueShowContainer extends Component {
       reviews: [],
       upvoteNumber: 0,
       downvoteNumber: 0,
-      vote: 0
+      vote: []
     }
-    this.handleVoteSubmit = this.handleVoteSubmit.bind(this)
-    this.handleVoteConfirm = this.handleVoteConfirm.bind(this)
+    this.upVote = this.upVote.bind(this)
+    this.downVote = this.downVote.bind(this)
+    this.vote = this.vote.bind(this)
   }
 
 
@@ -22,22 +23,23 @@ class VenueShowContainer extends Component {
       value: 1,
       review_id: reviewId
     }
+
     this.vote(newVote)
   }
 
   downVote(reviewId) {
     let newVote = {
-      value: 2,
+      value: -1,
       review_id: reviewId
     }
     this.vote(newVote)
   }
 
-  vote(vote){
-    fetch(`/api/v1/venues/${this.props.params.id}/reviews/${vote.review_id}/votes`, {
+  vote(userVote){
+    fetch(`/api/v1/venues/${this.props.params.id}/reviews/${userVote.review}/votes`, {
       credentials: 'same-origin',
       method: "POST",
-      body: JSON.stringify(vote),
+      body: JSON.stringify(userVote),
       headers: {'Content-Type': 'application/json'}
     })
     .then(response => {
@@ -52,66 +54,10 @@ class VenueShowContainer extends Component {
     .then(response => response.json())
     .then(body => {
       this.setState({
-        reviews: body.reviews
+        reviews: body
       })
     })
     .catch(error => console.error(`Error in fetch: ${error.message}`));
-  }
-
-
-  updateVote(reviewId){
-    let newVote = {
-      upvotes: this.state.upvoteNumber,
-      downvotes: this.state.downvoteNumber
-    }
-    fetch(`/api/v1/reviews/${reviewId}`, {
-      credentials: 'same-origin',
-      method: 'PATCH',
-      body: JSON.stringify(newVote),
-      headers: {'Content-Type': 'application/json'}
-    })
-    .then(response => {
-      debugger
-      if (response.ok) {
-        return response;
-      } else {
-        let errorMessage = `${response.status} (${response.statusText})`,
-        error = new Error(errorMessage);
-        throw(error);
-      }
-    })
-    .then(response => response.json())
-    .then(body => {
-      debugger
-    })
-    .catch(error => console.error(`Error in fetch: ${error.message}`));
-  }
-
-  handleVoteConfirm(event) {
-    this.setState({
-      vote: event.target.value
-    })
-  }
-
-  handleVoteChange() {
-    if(this.state.vote === 0){
-    }
-    else if (vote === 1) {
-      this.setState({
-        upvoteNumber: this.state.upvoteNumber += 1
-      });
-    }
-    else if (this.state.vote === 2) {
-      this.setState({
-        downvoteNumber: this.state.downvoteNumber += 1
-      })
-    }
-  }
-
-  handleVoteSubmit(reviewId) {
-    //event.preventDefault();
-    this.handleVoteChange();
-    this.updateVote(reviewId);
   }
 
   getVenue() {
@@ -152,8 +98,8 @@ class VenueShowContainer extends Component {
           user={review.user}
           upvotes={review.upvotes}
           downvotes={review.downvotes}
-          handleVoteSubmit={this.handleVoteSubmit}
-          handleVoteConfirm={this.handleVoteConfirm}
+          upVote={this.upVote}
+          downVote={this.downVote}
         />
       );
     })
