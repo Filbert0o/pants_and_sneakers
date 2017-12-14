@@ -1,9 +1,34 @@
-#utility {
+#utility-nav {
   color: white;
   padding: 0px 30px;
+  background: #111;
 }
 
-.new_user {
-  color: white;
-  padding-left: 50px;
+#user-buttons {
+  display: inline-block;
+  float: right;
+}
+
+.util-button {
+  text-decoration: none;
+  background-color: #111;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-left: 10px;
+
+  &:hover {
+    background: $off-white;
+    color: $maroon;
+  }
+}
+
+.profile-photo {
+  height: 30px;
+  width: 30px;
+  background-size: cover;
+  background-position: center center;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  border-radius: 50%;
 }

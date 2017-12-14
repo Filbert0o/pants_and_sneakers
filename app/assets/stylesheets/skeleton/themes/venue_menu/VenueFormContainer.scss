@@ -5,8 +5,7 @@
 }
 
 .row {
-  margin-top: 50px;
-  background-color: #27121A;
+  // margin-top: 50px;
 }
 
 .new-venue-form {
@@ -21,4 +20,11 @@
 .button-group {
   padding-top: 0px;
   margin-top: 5px;
+}
+
+.actions {
+  input[type='submit'] {
+    background-color: $maroon;
+    margin: 0;
+  }
 }
