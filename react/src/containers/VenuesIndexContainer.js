@@ -86,13 +86,13 @@ class VenuesIndexContainer extends Component {
     let button;
     if (!!this.state.currentUser) {
       button = <button><Link to={`/venues/new`}>Submit A New Venue</Link></button>
-
+    }
     // Logic for displaying page numbers
     const pageNumbers = [];
     for (let i = 1; i <= Math.ceil(this.state.venues.length / this.state.venuesPerPage); i++) {
       pageNumbers.push(i);
-
     }
+    
     const renderPageNumbers = pageNumbers.map(number => {
       return (
         <li
