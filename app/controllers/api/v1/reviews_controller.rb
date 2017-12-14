@@ -1,10 +1,6 @@
 # reviews controller for API calls
-class Api::V1::ReviewsController < ApiController
+class Api::V1::ReviewsController < ApplicationController
   skip_before_action :verify_authenticity_token
-  def new
-    review = Review.new
-    render json: review
-  end
 
   def create
     review = Review.new(review_params)
@@ -17,11 +13,6 @@ class Api::V1::ReviewsController < ApiController
       render json:
         { errors: review.errors.full_messages }, status: :unprocessable_entity
     end
-  end
-
-  def index
-    reviews = Venue.find(params[:venue_id]).reviews
-    render json: reviews
   end
 
   private
