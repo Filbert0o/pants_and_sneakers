@@ -1,10 +1,6 @@
 class Api::V1::VotesController < ApplicationController
   skip_before_action :verify_authenticity_token
   # before_action :authenticate_user!, except: [:index, :show]
-  def index
-    votes = Vote.all
-    render json: votes
-  end
 
   def create
     vote = Vote.new(vote_params)

@@ -11,10 +11,11 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :venues, only: [:index, :show, :new, :create] do
         resources :reviews, only: [:index] do
-          resources :votes, only: [:index, :create]
+          resources :votes, only: [:create]
         end
       end
       resources :reviews, only: [:index, :show, :create, :update]
+      resources :votes, only: [:create]
       resources :users
     end
   end
