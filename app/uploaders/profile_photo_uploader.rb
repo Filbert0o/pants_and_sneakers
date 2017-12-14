@@ -1,5 +1,5 @@
+# Photo Uploader for Carrier Wave
 class ProfilePhotoUploader < CarrierWave::Uploader::Base
-
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
   # include CarrierWave::MiniMagick
@@ -16,8 +16,7 @@ class ProfilePhotoUploader < CarrierWave::Uploader::Base
 
   # Provide a default URL as a default if there hasn't been a file uploaded:
   def default_url(*args)
-  #   # For Rails 3.1+ asset pipeline compatibility:
-  #
+  #   For Rails 3.1+ asset pipeline compatibility:
   #   "/images/fallback/" + [version_name, "default.png"].compact.join('_')
     ActionController::Base.helpers.asset_path('avatar.png')
   end
@@ -26,7 +25,7 @@ class ProfilePhotoUploader < CarrierWave::Uploader::Base
   # process scale: [200, 300]
   #
   # def scale(width, height)
-  #   # do something
+  #   do something
   # end
 
   # Create different versions of your uploaded files:
@@ -41,9 +40,8 @@ class ProfilePhotoUploader < CarrierWave::Uploader::Base
   # end
 
   # Override the filename of the uploaded files:
-  # Avoid using model.id or version_name here, see uploader/store.rb for details.
+  # Avoid using model.id or version_name here, see uploader/store.rb for details
   # def filename
   #   "something.jpg" if original_filename
   # end
-
 end
