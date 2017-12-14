@@ -8,10 +8,7 @@ class VenueShowContainer extends Component {
     super(props);
     this.state = {
       venue: {},
-      reviews: [],
-      upvoteNumber: 0,
-      downvoteNumber: 0,
-      vote: []
+      reviews: []
     }
     this.upVote = this.upVote.bind(this)
     this.downVote = this.downVote.bind(this)

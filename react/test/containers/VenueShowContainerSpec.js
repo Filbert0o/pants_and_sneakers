@@ -134,7 +134,9 @@ describe ('VenueShowContainer', () => {
           "created_at": "2017-12-12T16:08:23.362Z",
           "updated_at": "2017-12-12T16:08:23.374Z",
           "role": "member"
-        }
+        },
+        upVote: jasmine.any(Function),
+        downVote: jasmine.any(Function)
       })
 
       expect(wrapper.find(ReviewTile).nodes[1].props).toEqual({
@@ -151,7 +153,9 @@ describe ('VenueShowContainer', () => {
           "created_at": "2017-12-12T16:08:23.362Z",
           "updated_at": "2017-12-12T16:08:23.374Z",
           "role": "member"
-        }
+        },
+        upVote: jasmine.any(Function),
+        downVote: jasmine.any(Function)
       })
     done();
     }, 4000)
