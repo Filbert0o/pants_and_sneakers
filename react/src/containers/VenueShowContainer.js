@@ -80,7 +80,7 @@ class VenueShowContainer extends Component {
         />
         <div id='review-container' className='clearfix'>
           <div id='review-container-header'>
-            <h2>Reviews:</h2><Link to={`/venues/${this.state.venue.id}/reviews/new`} id='add-review-button'>Add Review</Link>
+            <h2>Reviews:</h2><Link to={`/venues/${this.state.venue.id}/reviews/new`} id='add-review-button'>+ Add Review</Link>
           </div>
           {this.mapReviews()}
         </div>

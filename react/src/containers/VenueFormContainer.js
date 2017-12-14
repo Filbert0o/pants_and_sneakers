@@ -211,8 +211,8 @@ class VenueFormContainer extends Component {
             </div>
           </div>
           <div className="button-group row">
-            <button className="button" onClick={this.handleClearForm} >Clear</button>
-            <input className="button" type="submit" value="Submit" />
+            <span className="custom-button" onClick={this.handleClearForm} >Clear</span>
+            <input className="custom-button" type="submit" value="Submit" />
           </div>
         </form>
       </div>

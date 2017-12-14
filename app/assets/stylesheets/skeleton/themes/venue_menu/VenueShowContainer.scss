@@ -1,0 +1,33 @@
+#review-container {
+  background-color: #211216;
+  padding: 40px;
+
+
+    h2 {
+      color: rgba(250,240,230,1);
+      display: inline-block;
+      margin: 0;
+      line-height: 100%;
+      vertical-align: middle;
+    }
+}
+#review-container-header {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+#add-review-button {
+  padding: 7px 15px;
+  display: inline-block;
+  border: 1px solid rgba(250,240,230,1);
+  vertical-align: middle;
+  margin-left: 20px;
+  color: rgba(250,240,230,1);
+  text-decoration: none;
+  transition: all .1s ease-in;
+
+    &:hover{
+      background-color: rgba(250,240,230,1);
+      color: #211216;
+    }
+}

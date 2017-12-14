@@ -97,7 +97,7 @@ class ReviewFormContainer extends Component {
             onChange={this.handleChange}
           />
           <div className="button-group">
-            <button className="button" onClick={this.handleClearForm} >Clear</button>
+            <span className="custom-button" onClick={this.handleClearForm} >Clear</span>
             <input className="button" type="submit" value="Submit" />
           </div>
         </form>
