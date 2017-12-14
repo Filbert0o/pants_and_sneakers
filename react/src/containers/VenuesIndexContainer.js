@@ -12,10 +12,10 @@ class VenuesIndexContainer extends Component {
       currentUser: null,
       currentPage: 1,
       venuesPerPage: 5
-    }
-    this.handleClick = this.handleClick.bind(this)
-    this.handlePagination = this.handlePagination.bind(this)
-    this.getVenues = this.getVenues.bind(this)
+    };
+    this.handleClick = this.handleClick.bind(this);
+    this.handlePagination = this.handlePagination.bind(this);
+    this.getVenues = this.getVenues.bind(this);
   }
 
   getVenues() {
@@ -53,7 +53,7 @@ class VenuesIndexContainer extends Component {
   handlePagination(event) {
     this.setState({
       currentPage: Number(event.target.id)
-    })
+    });
   }
 
 
@@ -84,7 +84,6 @@ class VenuesIndexContainer extends Component {
     })
 
     let button;
-    
     if (!!this.state.currentUser) {
       button = <button><Link to={`/venues/new`}>Submit A New Venue</Link></button>
     }
