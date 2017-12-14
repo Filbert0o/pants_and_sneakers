@@ -45,9 +45,13 @@ describe Api::V1::UsersController, type: :controller do
       @admin = create(:user, email: 'different@hotmail.com', role: 'admin')
       sign_in @admin
 
-      expect { delete :destroy, params: { id: @user.id } }.to change(User, :count).by(-1)
+      expect {
+        delete :destroy, params: { id: @user.id }
+      }.to change(User, :count).by(-1)
 
-      expect { User.find(@user.id) }.to raise_exception(ActiveRecord::RecordNotFound)
+      expect {
+        User.find(@user.id)
+      }.to raise_exception(ActiveRecord::RecordNotFound)
     end
   end
 end
