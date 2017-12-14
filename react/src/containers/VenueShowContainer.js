@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 import VenueShowTile from "../components/VenueShowTile"
 import ReviewTile from "../components/ReviewTile"
 
@@ -77,7 +78,10 @@ class VenueShowContainer extends Component {
           cashOnly={this.state.venue.cash_only}
           imageUrl={this.state.venue.image_url}
         />
-        <div>
+        <div id='review-container' className='clearfix'>
+          <div id='review-container-header'>
+            <h2>Reviews:</h2><Link to={`/venues/${this.state.venue.id}/reviews/new`} id='add-review-button'>Add Review</Link>
+          </div>
           {this.mapReviews()}
         </div>
       </div>
