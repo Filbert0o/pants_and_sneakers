@@ -45,7 +45,9 @@ describe ('VenuesIndexContainer', () => {
   it('should have the specified intial state', () => {
      expect(wrapper.state()).toEqual({
        venues: [],
-       currentUser: null
+       currentUser: null,
+       currentPage: 1,
+       venuesPerPage: 5
      })
   });
 
