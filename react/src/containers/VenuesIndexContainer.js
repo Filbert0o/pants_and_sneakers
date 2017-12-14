@@ -9,10 +9,13 @@ class VenuesIndexContainer extends Component {
     super(props);
     this.state = {
       venues: [],
-      currentUser: null
-    };
-    this.handleClick = this.handleClick.bind(this);
-    this.getVenues = this.getVenues.bind(this);
+      currentUser: null,
+      currentPage: 1,
+      venuesPerPage: 5
+    }
+    this.handleClick = this.handleClick.bind(this)
+    this.handlePagination = this.handlePagination.bind(this)
+    this.getVenues = this.getVenues.bind(this)
   }
 
   getVenues() {
@@ -47,9 +50,25 @@ class VenuesIndexContainer extends Component {
     browserHistory.push('/venues/new');
   }
 
+  handlePagination(event) {
+    this.setState({
+      currentPage: Number(event.target.id)
+    })
+  }
+
 
   render() {
-    let venues = this.state.venues.map((venue) => {
+    let button;
+    if (!!this.state.currentUser) {
+      button = <button><Link to={`/venues/new`}>Submit A New Venue</Link></button>
+    }
+
+    // Logic for displaying Venues
+    const indexOfLastVenue = this.state.currentPage * this.state.venuesPerPage;
+    const indexOfFirstVenue = indexOfLastVenue - this.state.venuesPerPage;
+    const currentVenues = this.state.venues.slice(indexOfFirstVenue, indexOfLastVenue);
+
+    let venues = currentVenues.map((venue) => {
       return(
         <VenuesIndexTile
           key={venue.id}
@@ -64,10 +83,29 @@ class VenuesIndexContainer extends Component {
       )
     })
 
+<<<<<<< HEAD
     let button;
     if (!!this.state.currentUser) {
       button = <button><Link to={`/venues/new`}>Submit A New Venue</Link></button>
+=======
+    // Logic for displaying page numbers
+    const pageNumbers = [];
+    for (let i = 1; i <= Math.ceil(this.state.venues.length / this.state.venuesPerPage); i++) {
+      pageNumbers.push(i);
+>>>>>>> 05cddd2b855b42fff9a97d6aeed7920a2d38cc5d
     }
+    const renderPageNumbers = pageNumbers.map(number => {
+      return (
+        <li
+          className='button'
+          key={number}
+          id={number}
+          onClick={this.handlePagination}
+        >
+          {number}
+        </li>
+      )
+    })
 
     return(
       <div className='row'>
@@ -75,6 +113,9 @@ class VenuesIndexContainer extends Component {
           {button}
         </div>
         {venues}
+        <ul className='page-numbers'>
+          {renderPageNumbers}
+        </ul>
       </div>
     )
   }

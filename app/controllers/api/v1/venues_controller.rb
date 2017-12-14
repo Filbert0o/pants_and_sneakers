@@ -13,11 +13,6 @@ class Api::V1::VenuesController < ApplicationController
     render json: venue
   end
 
-  def new
-    venue = Venue.new
-    render json: venue
-  end
-
   def create
     venue = Venue.new(venue_params)
     if venue.save
