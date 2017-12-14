@@ -40,7 +40,7 @@ RSpec.describe User, type: :model do
       attach_file 'Profile Photo', "#{Rails.root}/spec/support/avatar.png"
       click_button 'Sign up'
 
-      expect(page).to have_css("img[src*='avatar.png']")
+      expect(page).to have_css("div[class='profile-photo']")
     end
   end
 end
