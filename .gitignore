@@ -8,3 +8,4 @@ log/development.log
 /log
 /tmp
 /log/test.log
+/public/uploads

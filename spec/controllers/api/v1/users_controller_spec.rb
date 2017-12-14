@@ -38,4 +38,20 @@ describe Api::V1::UsersController, type: :controller do
       expect(returned_json).to eq nil
     end
   end
+
+  describe 'DELETE#destroy' do
+    it 'should delete a user account' do
+      @user = create(:user)
+      @admin = create(:user, email: 'different@hotmail.com', role: 'admin')
+      sign_in @admin
+
+      expect do
+        delete :destroy, params: { id: @user.id }
+      end.to change(User, :count).by(-1)
+
+      expect do
+        User.find(@user.id)
+      end.to raise_exception(ActiveRecord::RecordNotFound)
+    end
+  end
 end
