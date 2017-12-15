@@ -9,7 +9,6 @@ class Api::V1::VotesController < ApplicationController
 
     previous_value = Vote.find_by(user: vote.user, review: vote.review)
     if previous_value
-
       if previous_value.value == 1 && vote.value == 1
         previous_value.review.upvotes = previous_value.review.upvotes - 1
         previous_value.value = 0
@@ -40,12 +39,14 @@ class Api::V1::VotesController < ApplicationController
         render json: { error: vote.errors.full_messages }, status: :unprocessable_entity
       end
     else
-      if vote.value == 1 && vote.save
+      if vote.value == 1 && vote.valid?
+        vote.save
         vote.review.upvotes = vote.review.upvotes + 1
         vote.review.save
         reviews = Venue.find(params[:venue_id]).reviews
         render json: reviews
-      elsif vote.value == -1 && vote.save
+      elsif vote.value == -1 && vote.valid?
+        vote.save
         vote.review.downvotes = vote.review.downvotes + 1
         vote.review.save
         reviews = Venue.find(params[:venue_id]).reviews

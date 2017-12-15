@@ -15,16 +15,6 @@ class Api::V1::ReviewsController < ApplicationController
     end
   end
 
-  def index
-    reviews = Venue.find(params[:venue_id]).reviews
-    render json: reviews
-  end
-
-  def show
-    review = Review.find(params[:id])
-    render json: review
-  end
-
   private
 
   def review_params

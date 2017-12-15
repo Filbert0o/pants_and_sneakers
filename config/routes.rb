@@ -4,17 +4,17 @@ Rails.application.routes.draw do
 
   root "venues#index"
   resources :venues, only: [:index, :show, :new, :create] do
-    resources :reviews, only: [:new, :create, :show]
+    resources :reviews, only: [:new, :create]
   end
 
   namespace :api do
     namespace :v1 do
       resources :venues, only: [:index, :show, :new, :create] do
-        resources :reviews, only: [:index] do
+        resources :reviews, only: [:create] do
           resources :votes, only: [:create]
         end
       end
-      resources :reviews, only: [:index, :show, :create, :update]
+      resources :reviews, only: [:create, :update]
       resources :votes, only: [:create]
       resources :users
     end
