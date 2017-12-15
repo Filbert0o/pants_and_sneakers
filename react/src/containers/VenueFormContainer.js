@@ -60,6 +60,65 @@ class VenueFormContainer extends Component {
     .catch(error => console.error(`Error in fetch: ${error.message}`));
   }
 
+  updateVenue(newVenue) {
+    fetch(`/api/v1/venues/${this.props.params.id}`, {
+      credentials: 'same-origin',
+      method: 'PATCH',
+      body: JSON.stringify(newVenue),
+      headers: {'Content-Type': 'application/json'}
+    })
+    .then(response => {
+      if (response.ok) {
+        return response;
+      } else {
+        let errorMessage = `${response.status} (${response.statusText})`,
+        error = new Error(errorMessage);
+        throw(error);
+      }
+    })
+    .then(response => response.json())
+    .then(body => {
+      browserHistory.push(`/venues`);
+    })
+    .catch(error => console.error(`Error in fetch: ${error.message}`));
+  }
+
+  componentDidMount() {
+    if(this.props.params.id){
+      fetch(`/api/v1/venues/${this.props.params.id}`)
+      .then(response => {
+        if (response.ok) {
+          return response;
+        } else {
+          let errorMessage = `${response.status} (${response.statusText})`,
+          error = new Error(errorMessage);
+          throw(error);
+        }
+      })
+      .then(response => response.json())
+      .then(body => {
+        this.setState({
+          name: body.name,
+          address: body.address,
+          city: body.city,
+          state: body.state,
+          zip: body.zip,
+          website: body.website,
+          ageRestriction: body.age_restriction,
+          foodOptions: body.food_options,
+          parking: body.parking,
+          hours: body.hours,
+          phone: body.phone,
+          dressCode: body.dress_code,
+          coverCharge: body.cover_charge,
+          cashOnly: body.cash_only,
+          imageUrl: body.image_url
+        })
+      })
+      .catch(error => console.error(`Error in fetch: ${error.message}`));
+    }
+  }
+
   handleFormSubmit(event) {
     event.preventDefault();
     let formPayload = {
@@ -79,7 +138,11 @@ class VenueFormContainer extends Component {
       cash_only: this.state.cashOnly,
       image_url: this.state.imageUrl
     };
-    this.addNewVenue(formPayload);
+    if(this.props.params.id){
+      this.updateVenue(formPayload);
+    } else {
+      this.addNewVenue(formPayload);
+    }
     this.handleClearForm(event);
   }
 

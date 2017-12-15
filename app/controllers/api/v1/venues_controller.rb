@@ -4,7 +4,7 @@ class Api::V1::VenuesController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
 
   def index
-    venues = Venue.all
+    venues = Venue.all.sort_by{ |v| v.reviews.length }.reverse
     render json: { venues: venues, current_user: current_user }
   end
 
@@ -16,6 +16,15 @@ class Api::V1::VenuesController < ApplicationController
   def create
     venue = Venue.new(venue_params)
     if venue.save
+      render json: venue
+    else
+      render json: { error: venue.errors.full_messages }, status: :unprocessable_entity
+    end
+  end
+
+  def update
+    if Venue.update(params[:id], venue_params)
+      venue = Venue.find(params[:id])
       render json: venue
     else
       render json: { error: venue.errors.full_messages }, status: :unprocessable_entity

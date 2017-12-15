@@ -10,23 +10,26 @@
   </head>
 
   <body>
-    <header id="utility">
+    <div id="utility-nav" class='clearfix'>
       <p class="flash notice"> <%= notice %> </p>
       <p class="flash alert"> <%= alert %> </p>
-      <div class="u-pull-right" id="user_buttons">
+      <div id="user-buttons">
       <% if !current_user %>
-        <%= link_to "Sign In", new_user_session_path %>
-        <%= link_to "Sign Up", new_user_registration_path %>
+        <%= link_to "Sign In", new_user_session_path, {class: 'util-button'} %>
+        <%= link_to "Sign Up", new_user_registration_path, class: 'util-button' %>
       <% else %>
         <div id="signed_in">
-          <img src="<%=current_user.profile_photo%>"/>
-          <%= "Signed in as #{current_user.first_name}" %>
-          <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+          <a href='<%= edit_user_registration_path %>' >
+          <div class="profile-photo" style='background-image: url(<%=current_user.profile_photo%>);'>
+        </div>
+          <%= "#{current_user.first_name}" %>
+        </a>
+          <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: 'util-button' %>
+
         </div>
       <% end %>
-      <div class="u-cf"></div>
       </div>
-    </header>
+    </div>
     <%= yield %>
   </body>
 </html>

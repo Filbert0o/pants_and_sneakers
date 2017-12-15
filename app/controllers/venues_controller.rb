@@ -10,4 +10,8 @@ class VenuesController < ApplicationController
   def new; end
 
   def create; end
+
+  def edit
+    render :new
+  end
 end
