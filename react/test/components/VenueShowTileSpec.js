@@ -30,6 +30,6 @@ describe('VenueShowTile', () => {
   })
 
   it('should render a div tag with props', () => {
-    expect(wrapper.find('div').at(0).text()).toBe('Tattooed MomsAddress:504 south st.Philadelphia, PA., 19109Contact Info:Website: google.comPhone Number: 215-555-5555Hours: monday - sundayVenue Info:Age Restriction: 21+Food: bar foodParking: noneDress Code: suitCover Charge: 5 bucksCash Only: none')
+    expect(wrapper.find('div').at(0).text()).toBe('EditTattooed MomsAddress:504 south st.Philadelphia, PA., 19109Contact Info:Website: google.comPhone Number: 215-555-5555Hours: monday - sundayVenue Info:Age Restriction: 21+Food: bar foodParking: noneDress Code: suitCover Charge: 5 bucksCash Only: none')
   });
 })

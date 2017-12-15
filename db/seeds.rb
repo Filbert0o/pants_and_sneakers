@@ -20,7 +20,7 @@ venues = [
     food_options: "Limited Menu",
     parking: true,
     hours: "Wheneva!",
-    phone: "215-232-2100"
+    phone: "215-232-2100",
     dress_code: "Come as you are!",
     cover_charge: "YES",
     cash_only: false,
@@ -37,7 +37,7 @@ venues = [
     food_options: "Limited Menu",
     parking: true,
     hours: "Late, and then early!",
-    phone: "215-309-0150 "
+    phone: "215-309-0150",
     dress_code: "Casual!",
     cover_charge: "YES",
     cash_only: false,
@@ -54,7 +54,7 @@ venues = [
     food_options: "None",
     parking: true,
     hours: "Vampire hours!",
-    phone: "215-922-6888"
+    phone: "215-922-6888",
     dress_code: "Scuzzy!",
     cover_charge: "YES",
     cash_only: false,
@@ -71,7 +71,7 @@ venues = [
     food_options: "Limited Menu",
     parking: true,
     hours: "All dang day...!",
-    phone: "215-238-9880"
+    phone: "215-238-9880",
     dress_code: "Come as you are!",
     cover_charge: "Depends",
     cash_only: false,
@@ -80,5 +80,20 @@ venues = [
 ]
 
 venues.each do |v|
-  Venue.create(name: v[:name], address: v[:address], city: v[:city], state: v[:state], zip: v[:zip], image_url: v[:image_url])
+  Venue.create(
+    name: v[:name],
+    address: v[:address],
+    city: v[:city],
+    state: v[:state],
+    zip: v[:zip],
+    website: v[:website],
+    age_restriction: v[:age_restriction],
+    food_options: v[:food_options],
+    parking: v[:parking],
+    hours: v[:hours],
+    phone: v[:phone],
+    dress_code: v[:dress_code],
+    cover_charge: v[:cover_charge],
+    cash_only: v[:cash_only],
+    image_url: v[:image_url])
 end

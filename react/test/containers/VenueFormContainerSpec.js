@@ -5,11 +5,14 @@ describe('VenueFormContainer', () =>{
 
   beforeEach(()=>{
     wrapper = mount(
-      <VenueFormContainer />
+      <VenueFormContainer
+        params={ { id: null } }
+      />
     );
   });
 
-  it('should render a label tags with the appropriate attributes', () => {
+  it('should render a label tag with the appropriate attributes', () => {
+    console.log(wrapper.find('label').at(0).text());
     expect(wrapper.find('label').at(0).text()).toBe('Venue Name*');
     expect(wrapper.find('label').at(1).text()).toBe('Street Address*');
     expect(wrapper.find('label').at(2).text()).toBe('City*');
