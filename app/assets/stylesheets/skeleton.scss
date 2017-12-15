@@ -15,7 +15,7 @@
 
 html, body {
   min-width: 1124px;
-  background-color: #27121A;
+  background-color: $maroon;
 }
 
 .custom-button, input[type='submit'] {
@@ -40,6 +40,13 @@ html, body {
     background-color: rgba(250,240,230,1);
     color: #211216;
   }
+}
+
+.tile-button {
+  color: $maroon;
+  border-color: $maroon;
+  font-size: 12px;
+  margin: 0 10px 0 0;
 }
 
 .active {

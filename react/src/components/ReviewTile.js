@@ -10,13 +10,11 @@ const ReviewTile = props => {
   }
   return(
     <div className='review-tile'>
-      <h6>Reviewed by: {props.user.first_name} {props.user.last_name}</h6>
-      <h6>Rating: {props.rating}/5</h6>
-      <h6>Review: {props.review_text}</h6>
-      <h6>Upvote: {props.upvotes}</h6>
-      <button onClick={upVote}>Like</button>
-      <h6>Downvote: {props.downvotes}</h6>
-      <button onClick={downVote}>Dislike</button>
+      <h3>Rating: {props.rating}/5</h3>
+      <p>{props.review_text}</p>
+      <p>Reviewed by: {props.user.first_name} {props.user.last_name}</p>
+      <span className='custom-button tile-button' onClick={upVote}><i className="far fa-thumbs-up"></i> Like <span className='numbers'>{props.upvotes}</span></span>
+      <span className='custom-button tile-button' onClick={downVote}><i className="far fa-thumbs-down"></i> Dislike <span className='numbers'>{props.downvotes}</span></span>
     </div>
   )
 }
