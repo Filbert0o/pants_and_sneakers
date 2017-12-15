@@ -58,15 +58,26 @@ ActiveRecord::Schema.define(version: 20171215000010) do
     t.string "website", default: "", null: false
     t.string "age_restriction", default: "", null: false
     t.string "food_options", default: "", null: false
-    t.boolean "parking"
+    t.string "parking"
     t.string "hours", default: "", null: false
     t.string "phone", default: "", null: false
     t.string "dress_code", default: "", null: false
     t.string "cover_charge", default: "", null: false
-    t.boolean "cash_only"
+    t.string "cash_only"
     t.string "image_url", default: "../../assets/image/default_venue_photo.jpg", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "votes", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "review_id", null: false
+    t.integer "value", default: 0, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["review_id"], name: "index_votes_on_review_id"
+    t.index ["user_id", "review_id"], name: "index_votes_on_user_id_and_review_id", unique: true
+    t.index ["user_id"], name: "index_votes_on_user_id"
   end
 
 end

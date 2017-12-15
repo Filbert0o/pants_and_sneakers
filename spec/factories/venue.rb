@@ -7,3 +7,4 @@ FactoryBot.define do
     zip '19123'
   end
 end
+ 

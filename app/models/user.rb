@@ -7,6 +7,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :reviews
+  has_many :votes
 
   validates_presence_of :first_name, :last_name, :role
 

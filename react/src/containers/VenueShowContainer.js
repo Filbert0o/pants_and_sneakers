@@ -10,6 +10,52 @@ class VenueShowContainer extends Component {
       venue: {},
       reviews: []
     }
+    this.upVote = this.upVote.bind(this)
+    this.downVote = this.downVote.bind(this)
+    this.vote = this.vote.bind(this)
+  }
+
+
+  upVote(reviewId) {
+    let newVote = {
+      value: 1,
+      review_id: reviewId
+    }
+
+    this.vote(newVote)
+  }
+
+  downVote(reviewId) {
+    let newVote = {
+      value: -1,
+      review_id: reviewId
+    }
+    this.vote(newVote)
+  }
+
+  vote(userVote){
+    fetch(`/api/v1/venues/${this.props.params.id}/reviews/${userVote.review}/votes`, {
+      credentials: 'same-origin',
+      method: "POST",
+      body: JSON.stringify(userVote),
+      headers: {'Content-Type': 'application/json'}
+    })
+    .then(response => {
+      if (response.ok) {
+        return response;
+      } else {
+        let errorMessage = `${response.status} (${response.statusText})`,
+        error = new Error(errorMessage);
+        throw(error);
+      }
+    })
+    .then(response => response.json())
+    .then(body => {
+      this.setState({
+        reviews: body
+      })
+    })
+    .catch(error => console.error(`Error in fetch: ${error.message}`));
   }
 
   getVenue() {
@@ -50,6 +96,8 @@ class VenueShowContainer extends Component {
           user={review.user}
           upvotes={review.upvotes}
           downvotes={review.downvotes}
+          upVote={this.upVote}
+          downVote={this.downVote}
         />
       );
     })

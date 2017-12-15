@@ -3,15 +3,19 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   root "venues#index"
-  resources :venues, only: [:index, :show, :new, :create, :edit] do
-    resources :reviews, only: [:new, :create, :show]
+  resources :venues, only: [:index, :show, :new, :create] do
+    resources :reviews, only: [:new, :create]
   end
 
   namespace :api do
     namespace :v1 do
-      resources :venues, only: [:index, :show, :create, :update] do
+      resources :venues, only: [:index, :show, :new, :create] do
+        resources :reviews, only: [:create] do
+          resources :votes, only: [:create]
+        end
       end
-      resources :reviews, only: [:index, :create]
+      resources :reviews, only: [:create, :update]
+      resources :votes, only: [:create]
       resources :users
     end
   end
