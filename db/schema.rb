@@ -10,7 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+
 ActiveRecord::Schema.define(version: 20171214190855) do
+
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -55,27 +57,6 @@ ActiveRecord::Schema.define(version: 20171214190855) do
     t.string "city", null: false
     t.string "state", null: false
     t.string "zip", null: false
-<<<<<<< HEAD
-    t.string "website"
-    t.string "age_restriction"
-    t.string "food_options"
-    t.string "parking"
-    t.string "hours"
-    t.string "phone"
-    t.string "dress_code"
-    t.string "cover_charge"
-    t.string "cash_only"
-||||||| merged common ancestors
-    t.string "website"
-    t.string "age_restriction"
-    t.string "food_options"
-    t.boolean "parking"
-    t.string "hours"
-    t.string "phone"
-    t.string "dress_code"
-    t.string "cover_charge"
-    t.boolean "cash_only"
-=======
     t.string "website", default: "", null: false
     t.string "age_restriction", default: "", null: false
     t.string "food_options", default: "", null: false
@@ -85,7 +66,6 @@ ActiveRecord::Schema.define(version: 20171214190855) do
     t.string "dress_code", default: "", null: false
     t.string "cover_charge", default: "", null: false
     t.boolean "cash_only"
->>>>>>> 475e325ebcb9b66ba723192eaf6cf26268c0c0f9
     t.string "image_url", default: "../../assets/image/default_venue_photo.jpg", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
