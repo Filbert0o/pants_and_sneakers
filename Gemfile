@@ -40,6 +40,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :test do
   gem 'coveralls', require: false
+  gem 'simplecov', '>=0.3.8', require: false
 end
 
 # Adding Ruby version per Heroku instructions
