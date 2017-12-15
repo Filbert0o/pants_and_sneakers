@@ -10,9 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
-ActiveRecord::Schema.define(version: 20171214190855) do
-
+ActiveRecord::Schema.define(version: 20171215000010) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -60,12 +58,12 @@ ActiveRecord::Schema.define(version: 20171214190855) do
     t.string "website", default: "", null: false
     t.string "age_restriction", default: "", null: false
     t.string "food_options", default: "", null: false
-    t.boolean "parking"
+    t.string "parking"
     t.string "hours", default: "", null: false
     t.string "phone", default: "", null: false
     t.string "dress_code", default: "", null: false
     t.string "cover_charge", default: "", null: false
-    t.boolean "cash_only"
+    t.string "cash_only"
     t.string "image_url", default: "../../assets/image/default_venue_photo.jpg", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
