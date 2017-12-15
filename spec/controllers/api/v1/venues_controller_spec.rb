@@ -24,17 +24,17 @@ describe Api::V1::VenuesController, type: :controller do
       expect(response.content_type).to eq('application/json')
 
       expect(returned_json.length).to eq 2
-      expect(returned_json[0]['name']).to eq 'Union Transfer'
-      expect(returned_json[0]['address']).to eq '1101 Spring Garden St'
-      expect(returned_json[0]['city']).to eq 'Philadelphia'
-      expect(returned_json[0]['state']).to eq 'PA'
-      expect(returned_json[0]['zip']).to eq '19123'
+      expect(returned_json[1]['name']).to eq 'Union Transfer'
+      expect(returned_json[1]['address']).to eq '1101 Spring Garden St'
+      expect(returned_json[1]['city']).to eq 'Philadelphia'
+      expect(returned_json[1]['state']).to eq 'PA'
+      expect(returned_json[1]['zip']).to eq '19123'
 
-      expect(returned_json[1]['name']).to eq 'Electric'
-      expect(returned_json[1]['address']).to eq '234 main st.'
-      expect(returned_json[1]['city']).to eq 'Manhattan'
-      expect(returned_json[1]['state']).to eq 'NY'
-      expect(returned_json[1]['zip']).to eq '10018'
+      expect(returned_json[0]['name']).to eq 'Electric'
+      expect(returned_json[0]['address']).to eq '234 main st.'
+      expect(returned_json[0]['city']).to eq 'Manhattan'
+      expect(returned_json[0]['state']).to eq 'NY'
+      expect(returned_json[0]['zip']).to eq '10018'
     end
   end
 

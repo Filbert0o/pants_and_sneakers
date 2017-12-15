@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const VenueShowTile = props => {
   let background = {
@@ -11,6 +12,7 @@ const VenueShowTile = props => {
     <div className=''>
       <div className='venue-header clearfix' style={ background }>
         <div className='venue-details'>
+          <Link to={`/venues/${props.id}/edit`} className='custom-button edit-button'>Edit</Link>
           <h1 className='title-show clearfix'>{props.name}</h1>
           <hr/>
             <div className='info-column'>
