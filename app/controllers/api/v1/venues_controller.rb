@@ -14,6 +14,7 @@ class Api::V1::VenuesController < ApplicationController
   end
 
   def create
+    puts 'Test'
     venue = Venue.new(venue_params)
     if venue.save
       render json: venue
